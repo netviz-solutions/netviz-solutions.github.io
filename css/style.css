@@ -1,1 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+/* NAVBAR */
+header {
+    background: #271314;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    background: #B92425;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #B92425;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin: 10px 0;
+}
