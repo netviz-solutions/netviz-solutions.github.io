@@ -1,1 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services – Netviz Solutions</title>
+  <meta name="description" content="Explore Netviz Solutions' complete range of CCTV installation, surveillance, networking, and support services across India." />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
 
+<!-- ============================================================ HEADER ============================================================ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="17" stroke="#0057FF" stroke-width="2"/>
+          <circle cx="18" cy="18" r="8" fill="#0057FF" opacity="0.15"/>
+          <circle cx="18" cy="18" r="4" fill="#0057FF"/>
+          <line x1="18" y1="1" x2="18" y2="8" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18" y1="28" x2="18" y2="35" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="1" y1="18" x2="8" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="28" y1="18" x2="35" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="5.4" y1="5.4" x2="10.5" y2="10.5" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="25.5" y1="25.5" x2="30.6" y2="30.6" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="30.6" y1="5.4" x2="25.5" y2="10.5" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="10.5" y1="25.5" x2="5.4" y2="30.6" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="logo-text"><span class="logo-main">Netviz</span><span class="logo-sub">Solutions</span></div>
+    </a>
+    <nav class="nav-desktop">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <div class="nav-dropdown">
+        <a href="services.html" class="nav-link nav-dropdown-trigger active">
+          Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="services/cctv-installation.html">CCTV Installation</a>
+          <a href="services/surveillance-systems.html">Surveillance Systems</a>
+          <a href="services/networking-solutions.html">Networking Solutions</a>
+          <a href="services/router-setup.html">Router & Network Setup</a>
+          <a href="services/maintenance.html">Maintenance</a>
+          <a href="services/remote-monitoring.html">Remote Monitoring</a>
+          <a href="services/troubleshooting.html">Troubleshooting</a>
+        </div>
+      </div>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="service-area.html" class="nav-link">Service Area</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="tel:7892225484" class="header-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+      Call Now
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="index.html" class="mob-link">Home</a>
+    <a href="about.html" class="mob-link">About</a>
+    <a href="services.html" class="mob-link">Services</a>
+    <a href="projects.html" class="mob-link">Projects</a>
+    <a href="service-area.html" class="mob-link">Service Area</a>
+    <a href="reviews.html" class="mob-link">Reviews</a>
+    <a href="contact.html" class="mob-link">Contact</a>
+    <a href="tel:7892225484" class="mob-cta">📞 Call: 7892225484</a>
+  </nav>
+</header>
+
+
+<!-- ============================================================ CINEMATIC HERO ============================================================ -->
+<section class="srv-hero">
+  <!-- Animated background particles -->
+  <div class="particle-field" id="particleField"></div>
+  <!-- Rotating rings -->
+  <div class="hero-ring hero-ring-1"></div>
+  <div class="hero-ring hero-ring-2"></div>
+  <div class="hero-ring hero-ring-3"></div>
+  <!-- Floating tech icons -->
+  <div class="hero-float-icons">
+    <div class="fi fi-1">📷</div>
+    <div class="fi fi-2">🌐</div>
+    <div class="fi fi-3">🔒</div>
+    <div class="fi fi-4">📡</div>
+    <div class="fi fi-5">🛡️</div>
+    <div class="fi fi-6">⚙️</div>
+  </div>
+
+  <div class="srv-hero-content" data-aos="fade-up">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="bc-sep">›</span>
+      <span class="bc-current">Services</span>
+    </div>
+    <div class="srv-hero-tag">
+      <span class="tag-pulse"></span>
+      7 Professional Services
+    </div>
+    <h1 class="srv-hero-title">
+      Everything You Need<br/>
+      <span class="srv-title-gradient">For Total Security</span>
+    </h1>
+    <p class="srv-hero-desc">From CCTV installation to complete network infrastructure — we deliver end-to-end solutions tailored for homes, offices, and industries across India.</p>
+    <div class="srv-hero-actions">
+      <a href="contact.html" class="btn-primary">Get Free Quote</a>
+      <a href="tel:7892225484" class="btn-outline-light">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+        7892225484
+      </a>
+    </div>
+  </div>
+
+  <!-- 3D Rotating Service Wheel -->
+  <div class="service-wheel" data-aos="fade-left">
+    <div class="wheel-center">
+      <svg width="44" height="44" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="17" stroke="#0057FF" stroke-width="2"/>
+        <circle cx="18" cy="18" r="8" fill="#0057FF" opacity="0.3"/>
+        <circle cx="18" cy="18" r="4" fill="#0057FF"/>
+        <line x1="18" y1="1" x2="18" y2="8" stroke="#6AA9FF" stroke-width="2" stroke-linecap="round"/>
+        <line x1="18" y1="28" x2="18" y2="35" stroke="#6AA9FF" stroke-width="2" stroke-linecap="round"/>
+        <line x1="1" y1="18" x2="8" y2="18" stroke="#6AA9FF" stroke-width="2" stroke-linecap="round"/>
+        <line x1="28" y1="18" x2="35" y2="18" stroke="#6AA9FF" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span>Netviz</span>
+    </div>
+    <div class="wheel-orbit">
+      <div class="orbit-item oi-1"><div class="oi-inner">📷<span>CCTV</span></div></div>
+      <div class="orbit-item oi-2"><div class="oi-inner">👁️<span>Surveillance</span></div></div>
+      <div class="orbit-item oi-3"><div class="oi-inner">🌐<span>Network</span></div></div>
+      <div class="orbit-item oi-4"><div class="oi-inner">📡<span>Router</span></div></div>
+      <div class="orbit-item oi-5"><div class="oi-inner">🔧<span>Maintenance</span></div></div>
+      <div class="orbit-item oi-6"><div class="oi-inner">🖥️<span>Remote</span></div></div>
+      <div class="orbit-item oi-7"><div class="oi-inner">💡<span>Support</span></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ SERVICES OVERVIEW STRIP ============================================================ -->
+<div class="services-strip">
+  <div class="ss-track">
+    <div class="ss-item"><span>📷</span> CCTV Installation</div>
+    <div class="ss-item"><span>👁️</span> Surveillance Systems</div>
+    <div class="ss-item"><span>🌐</span> Networking Solutions</div>
+    <div class="ss-item"><span>📡</span> Router Setup</div>
+    <div class="ss-item"><span>🔧</span> Maintenance & AMC</div>
+    <div class="ss-item"><span>🖥️</span> Remote Monitoring</div>
+    <div class="ss-item"><span>💡</span> Troubleshooting</div>
+    <!-- duplicate for infinite scroll -->
+    <div class="ss-item"><span>📷</span> CCTV Installation</div>
+    <div class="ss-item"><span>👁️</span> Surveillance Systems</div>
+    <div class="ss-item"><span>🌐</span> Networking Solutions</div>
+    <div class="ss-item"><span>📡</span> Router Setup</div>
+    <div class="ss-item"><span>🔧</span> Maintenance & AMC</div>
+    <div class="ss-item"><span>🖥️</span> Remote Monitoring</div>
+    <div class="ss-item"><span>💡</span> Troubleshooting</div>
+  </div>
+</div>
+
+
+<!-- ============================================================ MAIN SERVICES GRID ============================================================ -->
+<section class="section srv-main-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">All Services</span>
+      <h2 class="section-title">Our Complete Service Portfolio</h2>
+      <p class="section-desc">Click any service to explore full details, features, and pricing information.</p>
+    </div>
+
+    <!-- SERVICE 1 — CCTV INSTALLATION (FEATURED LARGE) -->
+    <div class="srv-featured-card" data-aos="fade-up">
+      <a href="services/cctv-installation.html" class="sfc-link">
+        <div class="sfc-img-side">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="CCTV Installation" class="sfc-img" />
+          <div class="sfc-img-overlay"></div>
+          <div class="sfc-img-badge">
+            <span>⭐ Most Popular</span>
+          </div>
+          <!-- Floating camera animation -->
+          <div class="sfc-float-elem sfc-fe-1">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 10l4.553-2.069A1 1 0 0121 8.868v6.264a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>HD 4K Ready</span>
+          </div>
+          <div class="sfc-float-elem sfc-fe-2">
+            <span class="sfe-dot"></span>
+            <span>Live Recording</span>
+          </div>
+        </div>
+        <div class="sfc-content-side">
+          <div class="sfc-number">01</div>
+          <div class="sfc-tag">Security</div>
+          <h2 class="sfc-title">CCTV Camera Installation</h2>
+          <p class="sfc-desc">Professional HD & IP camera installation for homes, shops, offices, warehouses, and industrial sites across India. We handle everything from planning to installation to configuration.</p>
+          <ul class="sfc-features">
+            <li><span class="sff-check">✓</span> HD, Full HD & 4K Cameras</li>
+            <li><span class="sff-check">✓</span> Indoor & Outdoor Installation</li>
+            <li><span class="sff-check">✓</span> Night Vision & IR Cameras</li>
+            <li><span class="sff-check">✓</span> DVR / NVR Configuration</li>
+            <li><span class="sff-check">✓</span> Mobile App Setup & Training</li>
+            <li><span class="sff-check">✓</span> All Brands Supported</li>
+          </ul>
+          <div class="sfc-bottom">
+            <div class="sfc-meta">
+              <div class="sfc-meta-item">
+                <span class="sfm-label">Brands</span>
+                <span class="sfm-val">Hikvision · Dahua · CP Plus</span>
+              </div>
+              <div class="sfc-meta-item">
+                <span class="sfm-label">Coverage</span>
+                <span class="sfm-val">Pan India</span>
+              </div>
+            </div>
+            <span class="sfc-cta-btn">Explore Service <span class="cta-arrow">→</span></span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- SERVICE 2 — SURVEILLANCE SYSTEMS (FEATURED LARGE REVERSED) -->
+    <div class="srv-featured-card srv-featured-reverse" data-aos="fade-up">
+      <a href="services/surveillance-systems.html" class="sfc-link">
+        <div class="sfc-content-side">
+          <div class="sfc-number">02</div>
+          <div class="sfc-tag sfc-tag-cyan">Surveillance</div>
+          <h2 class="sfc-title">HD & IP Surveillance Systems</h2>
+          <p class="sfc-desc">Complete end-to-end surveillance system design and installation. We build intelligent, scalable systems that keep your property protected around the clock with real-time monitoring.</p>
+          <ul class="sfc-features">
+            <li><span class="sff-check sff-cyan">✓</span> IP & Analog Camera Systems</li>
+            <li><span class="sff-check sff-cyan">✓</span> Multi-Camera Setup & Zones</li>
+            <li><span class="sff-check sff-cyan">✓</span> 24/7 Continuous Recording</li>
+            <li><span class="sff-check sff-cyan">✓</span> Motion Detection & Alerts</li>
+            <li><span class="sff-check sff-cyan">✓</span> Cloud & Local Storage</li>
+            <li><span class="sff-check sff-cyan">✓</span> AI-Based Smart Detection</li>
+          </ul>
+          <div class="sfc-bottom">
+            <div class="sfc-meta">
+              <div class="sfc-meta-item">
+                <span class="sfm-label">Type</span>
+                <span class="sfm-val">IP · Analog · Hybrid</span>
+              </div>
+              <div class="sfc-meta-item">
+                <span class="sfm-label">Support</span>
+                <span class="sfm-val">24×7 Available</span>
+              </div>
+            </div>
+            <span class="sfc-cta-btn sfc-btn-cyan">Explore Service <span class="cta-arrow">→</span></span>
+          </div>
+        </div>
+        <div class="sfc-img-side">
+          <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80" alt="Surveillance Systems" class="sfc-img" />
+          <div class="sfc-img-overlay sfc-overlay-cyan"></div>
+          <div class="sfc-float-elem sfc-fe-3">
+            <span class="sfe-dot sfe-dot-cyan"></span>
+            <span>System Active</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- SERVICES 3–7 — GRID CARDS -->
+    <div class="srv-cards-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Networking Solutions -->
+      <a href="services/networking-solutions.html" class="srv-card srv-card-blue">
+        <div class="srvc-glow"></div>
+        <div class="srvc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80" alt="Networking Solutions" class="srvc-img" />
+          <div class="srvc-img-overlay"></div>
+          <div class="srvc-num">03</div>
+        </div>
+        <div class="srvc-body">
+          <div class="srvc-icon-row">
+            <div class="srvc-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="srvc-tag">Networking</div>
+          </div>
+          <h3 class="srvc-title">Networking Solutions</h3>
+          <p class="srvc-desc">Wireless & wired networking infrastructure for seamless, high-speed connectivity in any environment.</p>
+          <ul class="srvc-points">
+            <li>LAN / WAN Setup</li>
+            <li>Wi-Fi Coverage Planning</li>
+            <li>Network Security Config</li>
+            <li>Structured Cabling</li>
+          </ul>
+          <div class="srvc-footer">
+            <span class="srvc-link">View Details <span>→</span></span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Router Setup -->
+      <a href="services/router-setup.html" class="srv-card srv-card-gold">
+        <div class="srvc-glow srvc-glow-gold"></div>
+        <div class="srvc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=600&q=80" alt="Router Setup" class="srvc-img" />
+          <div class="srvc-img-overlay"></div>
+          <div class="srvc-num">04</div>
+        </div>
+        <div class="srvc-body">
+          <div class="srvc-icon-row">
+            <div class="srvc-icon srvc-icon-gold">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="14" width="20" height="6" rx="2" stroke="currentColor" stroke-width="2"/><path d="M6 14V9m6 5V7m6 7V9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8.5 5.5a5 5 0 017 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="srvc-tag srvc-tag-gold">Router & WiFi</div>
+          </div>
+          <h3 class="srvc-title">Router & Network Setup</h3>
+          <p class="srvc-desc">Complete router configuration, WiFi optimization, and network performance tuning for homes and offices.</p>
+          <ul class="srvc-points">
+            <li>Router Configuration</li>
+            <li>WiFi Range Extension</li>
+            <li>Bandwidth Management</li>
+            <li>Firewall & Security</li>
+          </ul>
+          <div class="srvc-footer">
+            <span class="srvc-link srvc-link-gold">View Details <span>→</span></span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Maintenance -->
+      <a href="services/maintenance.html" class="srv-card srv-card-green">
+        <div class="srvc-glow srvc-glow-green"></div>
+        <div class="srvc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80" alt="Maintenance" class="srvc-img" />
+          <div class="srvc-img-overlay"></div>
+          <div class="srvc-num">05</div>
+        </div>
+        <div class="srvc-body">
+          <div class="srvc-icon-row">
+            <div class="srvc-icon srvc-icon-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="srvc-tag srvc-tag-green">AMC</div>
+          </div>
+          <h3 class="srvc-title">Maintenance & AMC</h3>
+          <p class="srvc-desc">Annual Maintenance Contracts ensuring your security and networking systems run flawlessly year-round.</p>
+          <ul class="srvc-points">
+            <li>Preventive Maintenance</li>
+            <li>Hardware Cleaning & Check</li>
+            <li>Firmware Updates</li>
+            <li>Annual Service Contract</li>
+          </ul>
+          <div class="srvc-footer">
+            <span class="srvc-link srvc-link-green">View Details <span>→</span></span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Remote Monitoring -->
+      <a href="services/remote-monitoring.html" class="srv-card srv-card-purple">
+        <div class="srvc-glow srvc-glow-purple"></div>
+        <div class="srvc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1551808525-51a94da548ce?w=600&q=80" alt="Remote Monitoring" class="srvc-img" />
+          <div class="srvc-img-overlay"></div>
+          <div class="srvc-num">06</div>
+        </div>
+        <div class="srvc-body">
+          <div class="srvc-icon-row">
+            <div class="srvc-icon srvc-icon-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="srvc-tag srvc-tag-purple">Remote Access</div>
+          </div>
+          <h3 class="srvc-title">Remote Monitoring Setup</h3>
+          <p class="srvc-desc">Access and monitor your property from anywhere in the world using your smartphone, tablet, or PC.</p>
+          <ul class="srvc-points">
+            <li>Mobile App Integration</li>
+            <li>Live View Anywhere</li>
+            <li>Cloud Storage Setup</li>
+            <li>Alert & Notification Config</li>
+          </ul>
+          <div class="srvc-footer">
+            <span class="srvc-link srvc-link-purple">View Details <span>→</span></span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Troubleshooting -->
+      <a href="services/troubleshooting.html" class="srv-card srv-card-red srv-card-wide">
+        <div class="srvc-glow srvc-glow-red"></div>
+        <div class="srvc-img-wrap srvc-img-wide">
+          <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&q=80" alt="Troubleshooting" class="srvc-img" />
+          <div class="srvc-img-overlay"></div>
+          <div class="srvc-num">07</div>
+        </div>
+        <div class="srvc-body">
+          <div class="srvc-icon-row">
+            <div class="srvc-icon srvc-icon-red">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="srvc-tag srvc-tag-red">24×7 Support</div>
+          </div>
+          <h3 class="srvc-title">Troubleshooting & Support</h3>
+          <p class="srvc-desc">Fast diagnosis and resolution of all security camera, DVR/NVR, network, and connectivity issues. Remote and on-site support available around the clock.</p>
+          <ul class="srvc-points srvc-points-wide">
+            <li>Camera Not Working Fixes</li>
+            <li>DVR/NVR Recovery</li>
+            <li>Network Downtime Fixes</li>
+            <li>Remote Diagnosis</li>
+            <li>On-Site Emergency Support</li>
+            <li>Software & Firmware Issues</li>
+          </ul>
+          <div class="srvc-footer">
+            <span class="srvc-link srvc-link-red">View Details <span>→</span></span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ 3D PROCESS SECTION ============================================================ -->
+<section class="section process-3d-section">
+  <div class="p3d-bg"></div>
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag section-tag-white">How It Works</span>
+      <h2 class="section-title p3d-title">From Call to Installation</h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.65)">A simple, transparent process — we handle everything so you don't have to worry.</p>
+    </div>
+    <div class="p3d-steps" data-aos="fade-up" data-aos-delay="100">
+      <div class="p3d-connector"></div>
+      <div class="p3d-step">
+        <div class="p3d-icon-wrap">
+          <div class="p3d-icon-ring"></div>
+          <div class="p3d-icon">📞</div>
+        </div>
+        <div class="p3d-step-num">Step 1</div>
+        <h3>Contact Us</h3>
+        <p>Call, WhatsApp or fill the inquiry form with your requirements.</p>
+      </div>
+      <div class="p3d-step">
+        <div class="p3d-icon-wrap">
+          <div class="p3d-icon-ring"></div>
+          <div class="p3d-icon">📋</div>
+        </div>
+        <div class="p3d-step-num">Step 2</div>
+        <h3>Site Survey</h3>
+        <p>Our expert visits your location for a free assessment and detailed quote.</p>
+      </div>
+      <div class="p3d-step">
+        <div class="p3d-icon-wrap">
+          <div class="p3d-icon-ring"></div>
+          <div class="p3d-icon">🔧</div>
+        </div>
+        <div class="p3d-step-num">Step 3</div>
+        <h3>Installation</h3>
+        <p>Professional, clean installation by our certified technical team.</p>
+      </div>
+      <div class="p3d-step">
+        <div class="p3d-icon-wrap">
+          <div class="p3d-icon-ring"></div>
+          <div class="p3d-icon">✅</div>
+        </div>
+        <div class="p3d-step-num">Step 4</div>
+        <h3>Handover & Support</h3>
+        <p>Full demo, training, and 24×7 post-installation support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ WHY CHOOSE US STRIP ============================================================ -->
+<section class="section why-strip-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Why Us</span>
+      <h2 class="section-title">Why Choose Netviz Solutions</h2>
+    </div>
+    <div class="why-strip-grid" data-aos="fade-up" data-aos-delay="100">
+      <div class="wsg-item">
+        <div class="wsg-icon">👥</div>
+        <div class="wsg-text">
+          <h4>Expert Team</h4>
+          <p>Trained & certified professionals with years of hands-on experience.</p>
+        </div>
+      </div>
+      <div class="wsg-item">
+        <div class="wsg-icon">⚡</div>
+        <div class="wsg-text">
+          <h4>Fast Service</h4>
+          <p>Quick response and same-day or next-day installation in most areas.</p>
+        </div>
+      </div>
+      <div class="wsg-item">
+        <div class="wsg-icon">🏷️</div>
+        <div class="wsg-text">
+          <h4>No Brand Limit</h4>
+          <p>We work with all leading brands — Hikvision, CP Plus, D-Link, TP-Link & more.</p>
+        </div>
+      </div>
+      <div class="wsg-item">
+        <div class="wsg-icon">💰</div>
+        <div class="wsg-text">
+          <h4>Best Pricing</h4>
+          <p>Transparent, competitive pricing with zero hidden charges.</p>
+        </div>
+      </div>
+      <div class="wsg-item">
+        <div class="wsg-icon">🌏</div>
+        <div class="wsg-text">
+          <h4>Pan India</h4>
+          <p>Serving all states and cities across India — no location too far.</p>
+        </div>
+      </div>
+      <div class="wsg-item">
+        <div class="wsg-icon">🕐</div>
+        <div class="wsg-text">
+          <h4>24×7 Support</h4>
+          <p>Always available for emergencies, queries, and troubleshooting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ CTA SECTION ============================================================ -->
+<section class="section cta-section">
+  <div class="cta-bg-grid"></div>
+  <div class="cta-orb"></div>
+  <div class="container">
+    <div class="cta-inner" data-aos="zoom-in">
+      <div class="cta-icon-wrap">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h2 class="cta-title">Ready to Get Started?</h2>
+      <p class="cta-desc">Contact Netviz Solutions today and get a free site survey and customized quote for your security or networking requirements.</p>
+      <div class="cta-actions">
+        <a href="tel:7892225484" class="btn-white-solid">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+          Call: 7892225484
+        </a>
+        <a href="https://wa.me/917892225484" target="_blank" class="btn-whatsapp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+        <a href="contact.html" class="btn-outline-white">Free Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ FOOTER ============================================================ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <div class="footer-logo-icon">
+            <svg width="30" height="30" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="#0057FF" stroke-width="2"/><circle cx="18" cy="18" r="8" fill="#0057FF" opacity="0.2"/><circle cx="18" cy="18" r="4" fill="#0057FF"/><line x1="18" y1="1" x2="18" y2="8" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="18" y1="28" x2="18" y2="35" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="18" x2="8" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="28" y1="18" x2="35" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="footer-logo-text"><span class="flm">Netviz</span><span class="fls">Solutions</span></div>
+        </a>
+        <p class="footer-tagline">Smart Security. Reliable Networking.<br/>Trusted Solutions.</p>
+        <div class="footer-contact-info">
+          <a href="tel:7892225484" class="fci-item"><span class="fci-icon">📞</span><span>7892225484</span></a>
+          <a href="mailto:netvizsolutions@gmail.com" class="fci-item"><span class="fci-icon">✉️</span><span>netvizsolutions@gmail.com</span></a>
+          <div class="fci-item"><span class="fci-icon">📍</span><span>All Over India</span></div>
+        </div>
+        <a href="https://wa.me/917892225484" target="_blank" class="whatsapp-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="service-area.html">Service Area</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services/cctv-installation.html">CCTV Installation</a></li>
+          <li><a href="services/surveillance-systems.html">Surveillance Systems</a></li>
+          <li><a href="services/networking-solutions.html">Networking Solutions</a></li>
+          <li><a href="services/router-setup.html">Router & Network Setup</a></li>
+          <li><a href="services/maintenance.html">Maintenance</a></li>
+          <li><a href="services/remote-monitoring.html">Remote Monitoring</a></li>
+          <li><a href="services/troubleshooting.html">Troubleshooting</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Service Coverage</h4>
+        <div class="footer-coverage">
+          <div class="coverage-badge">🇮🇳 Pan India Service</div>
+          <p class="coverage-text">Professional security & networking services across all major cities and states in India.</p>
+          <a href="service-area.html" class="coverage-link">View Full Service Area →</a>
+        </div>
+        <div class="footer-cta-box">
+          <p>Need a quick solution?</p>
+          <a href="contact.html" class="footer-cta-btn">Get Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-container footer-bottom-inner">
+      <p class="footer-copy">© 2025 Netviz Solutions. All Rights Reserved.</p>
+      <p class="footer-credit">Designed &amp; Developed by <a href="https://nexaaweb.github.io/" target="_blank" rel="noopener" class="nexaa-link">@nexaaaweb</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/917892225484" target="_blank" class="float-whatsapp" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="float-pulse"></span>
+</a>
+
+<script>
+  /* Header */
+  const hdr = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 20));
+  document.getElementById('hamburger').addEventListener('click', function(){
+    this.classList.toggle('open');
+    document.getElementById('navMobile').classList.toggle('open');
+  });
+
+  /* AOS */
+  const aosEls = document.querySelectorAll('[data-aos]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('aos-animate'); });
+  }, { threshold: 0.08 });
+  aosEls.forEach(el => observer.observe(el));
+
+  /* Particle Field */
+  const field = document.getElementById('particleField');
+  if(field){
+    for(let i = 0; i < 40; i++){
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.cssText = `
+        left:${Math.random()*100}%;
+        top:${Math.random()*100}%;
+        width:${2+Math.random()*3}px;
+        height:${2+Math.random()*3}px;
+        animation-delay:${Math.random()*6}s;
+        animation-duration:${4+Math.random()*6}s;
+        opacity:${0.2+Math.random()*0.5};
+      `;
+      field.appendChild(p);
+    }
+  }
+
+  /* Parallax on hero rings */
+  window.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const y = (e.clientY / window.innerHeight - 0.5) * 20;
+    document.querySelectorAll('.hero-ring').forEach((r, i) => {
+      const factor = (i + 1) * 0.4;
+      r.style.transform = `translate(${x*factor}px, ${y*factor}px) rotate(${i*30}deg)`;
+    });
+  });
+</script>
+
+</body>
+</html>
