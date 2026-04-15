@@ -1,28 +1,31 @@
-/* ============================================================
-   HERO
-============================================================ */
+/* HERO */
 .contact-hero {
-  min-height: 80vh;
+  height: 90vh;
   background: linear-gradient(135deg,#020E2C,#041235,#0A2463);
   display:flex;
   align-items:center;
   justify-content:center;
-  text-align:center;
   position:relative;
   overflow:hidden;
 }
 
-.contact-glow {
+.hero-ring {
   position:absolute;
-  width:500px;
-  height:500px;
-  background: radial-gradient(circle, rgba(0,87,255,0.3), transparent);
-  animation: glowMove 8s infinite alternate;
+  border:1px dashed rgba(0,87,255,0.3);
+  border-radius:50%;
+  animation: spin 30s linear infinite;
+}
+.hr1 { width:500px; height:500px; }
+.hr2 { width:700px; height:700px; animation-direction:reverse; }
+
+@keyframes spin {
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
 }
 
-@keyframes glowMove {
-  from { transform: translate(-20%, -20%); }
-  to { transform: translate(20%, 20%); }
+.contact-hero-content {
+  text-align:center;
+  z-index:2;
 }
 
 .contact-hero h1 {
@@ -31,24 +34,37 @@
   color:#fff;
 }
 
+.contact-hero h1 span {
+  color:#00d4ff;
+}
+
 .contact-hero p {
   color:rgba(255,255,255,0.7);
   margin:1rem 0 2rem;
 }
 
-.contact-actions {
-  display:flex;
-  gap:1rem;
-  justify-content:center;
+
+/* PARTICLES */
+.particle {
+  width:4px;
+  height:4px;
+  background:#00d4ff;
+  position:absolute;
+  border-radius:50%;
+  animation: float 6s infinite;
+}
+
+@keyframes float {
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-40px)}
+  100%{transform:translateY(0)}
 }
 
 
-/* ============================================================
-   GRID
-============================================================ */
-.contact-section {
+/* CONTACT GRID */
+.contact-main {
   padding:5rem 2rem;
-  background:#f9f9f9;
+  background:#f4f4f4;
 }
 
 .contact-grid {
@@ -57,15 +73,21 @@
   gap:2rem;
 }
 
-
-/* FORM */
-.contact-form-box {
-  background:#fff;
+/* GLASS EFFECT */
+.glass {
+  backdrop-filter:blur(20px);
+  background:rgba(255,255,255,0.6);
+  border:1px solid rgba(255,255,255,0.4);
+  border-radius:16px;
   padding:2rem;
-  border-radius:12px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.3s;
 }
 
+.glass:hover {
+  transform:translateY(-8px);
+}
+
+/* FORM */
 .form-group {
   position:relative;
   margin-bottom:1.5rem;
@@ -75,86 +97,54 @@
 .form-group textarea {
   width:100%;
   padding:1rem;
-  border:1px solid #ddd;
+  border:none;
   border-radius:8px;
   outline:none;
 }
 
 .form-group label {
   position:absolute;
-  top:50%;
   left:1rem;
+  top:50%;
   transform:translateY(-50%);
-  background:#fff;
-  padding:0 5px;
-  font-size:0.8rem;
   transition:0.3s;
 }
 
 .form-group input:focus + label,
 .form-group textarea:focus + label {
   top:-8px;
+  font-size:0.7rem;
   color:#0057FF;
 }
 
+/* BUTTON */
 .btn-submit {
   width:100%;
   padding:1rem;
-  border:none;
-  background:#0057FF;
+  background:linear-gradient(135deg,#0057FF,#00d4ff);
   color:#fff;
+  border:none;
   border-radius:30px;
   cursor:pointer;
   transition:0.3s;
 }
 
 .btn-submit:hover {
-  transform:translateY(-2px);
+  transform:scale(1.05);
 }
-
 
 /* INFO */
-.contact-info-box {
-  background:linear-gradient(135deg,#020E2C,#0A2463);
-  color:#fff;
-  padding:2rem;
-  border-radius:12px;
-}
-
-.info-item {
-  display:flex;
-  gap:10px;
+.info-box {
   margin-bottom:1rem;
+  font-weight:600;
 }
 
-.info-item a {
-  color:#fff;
-  text-decoration:none;
-}
-
-.info-card {
+.info-highlight {
   margin-top:2rem;
-  background:rgba(255,255,255,0.05);
   padding:1rem;
+  background:rgba(0,87,255,0.1);
   border-radius:10px;
 }
-
-
-/* CTA */
-.contact-cta {
-  background:#020E2C;
-  color:#fff;
-  text-align:center;
-  padding:4rem 2rem;
-}
-
-.cta-actions {
-  margin-top:1rem;
-  display:flex;
-  justify-content:center;
-  gap:1rem;
-}
-
 
 /* RESPONSIVE */
 @media(max-width:900px){
