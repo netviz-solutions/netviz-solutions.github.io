@@ -1,132 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact – Netviz Solutions</title>
-
-<link rel="stylesheet" href="css/header.css" />
-<link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/contact.css" />
-
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans&family=Space+Mono&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Netviz Solutions</title>
+  <meta name="description" content="Contact Netviz Solutions for CCTV installation, networking and surveillance services across India. Call 7892225484 or WhatsApp us today." />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-<!-- HEADER (COPY SAME FROM SERVICES) -->
+<!-- ======================================================
+     HEADER
+====================================================== -->
 <header class="site-header" id="siteHeader">
-  <!-- paste same header -->
+  <div class="header-container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="17" stroke="#0057FF" stroke-width="2"/>
+          <circle cx="18" cy="18" r="8" fill="#0057FF" opacity="0.15"/>
+          <circle cx="18" cy="18" r="4" fill="#0057FF"/>
+          <line x1="18" y1="1" x2="18" y2="8" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18" y1="28" x2="18" y2="35" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="1" y1="18" x2="8" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="28" y1="18" x2="35" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="5.4" y1="5.4" x2="10.5" y2="10.5" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="25.5" y1="25.5" x2="30.6" y2="30.6" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="30.6" y1="5.4" x2="25.5" y2="10.5" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="10.5" y1="25.5" x2="5.4" y2="30.6" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="logo-text"><span class="logo-main">Netviz</span><span class="logo-sub">Solutions</span></div>
+    </a>
+    <nav class="nav-desktop">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <div class="nav-dropdown">
+        <a href="services.html" class="nav-link nav-dropdown-trigger">
+          Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="services/cctv-installation.html">CCTV Installation</a>
+          <a href="services/surveillance-systems.html">Surveillance Systems</a>
+          <a href="services/networking-solutions.html">Networking Solutions</a>
+          <a href="services/router-setup.html">Router & Network Setup</a>
+          <a href="services/maintenance.html">Maintenance</a>
+          <a href="services/remote-monitoring.html">Remote Monitoring</a>
+          <a href="services/troubleshooting.html">Troubleshooting</a>
+        </div>
+      </div>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="service-area.html" class="nav-link">Service Area</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <a href="tel:7892225484" class="header-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+      Call Now
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="index.html" class="mob-link">Home</a>
+    <a href="about.html" class="mob-link">About</a>
+    <a href="services.html" class="mob-link">Services</a>
+    <a href="projects.html" class="mob-link">Projects</a>
+    <a href="service-area.html" class="mob-link">Service Area</a>
+    <a href="reviews.html" class="mob-link">Reviews</a>
+    <a href="contact.html" class="mob-link">Contact</a>
+    <a href="tel:7892225484" class="mob-cta">📞 Call: 7892225484</a>
+  </nav>
 </header>
 
-<!-- ============================================================
-   HERO (CINEMATIC)
-============================================================ -->
+
+<!-- ======================================================
+     CONTACT HERO
+====================================================== -->
 <section class="contact-hero">
-
-<div class="particle-field" id="particleField"></div>
-
-<div class="hero-ring hr1"></div>
-<div class="hero-ring hr2"></div>
-
-<div class="contact-hero-content">
-  <h1>Contact <span>Netviz</span></h1>
-  <p>Get fast CCTV & networking solutions anywhere in India</p>
-
-  <div class="hero-buttons">
-    <a href="tel:7892225484" class="btn-primary">Call Now</a>
-    <a href="https://wa.me/917892225484" target="_blank" class="btn-outline-light">WhatsApp</a>
+  <!-- Animated grid lines -->
+  <div class="ch-grid"></div>
+  <!-- Glowing orbs -->
+  <div class="ch-orb ch-orb-1"></div>
+  <div class="ch-orb ch-orb-2"></div>
+  <div class="ch-orb ch-orb-3"></div>
+  <!-- Animated signal rings -->
+  <div class="ch-signal">
+    <div class="signal-ring sr-1"></div>
+    <div class="signal-ring sr-2"></div>
+    <div class="signal-ring sr-3"></div>
+    <div class="signal-core">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+    </div>
   </div>
-</div>
 
+  <div class="ch-content" data-aos="fade-up">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="bc-sep">›</span>
+      <span class="bc-current">Contact</span>
+    </div>
+    <div class="ch-badge">
+      <span class="ch-badge-dot"></span>
+      Available 24 × 7 — Across India
+    </div>
+    <h1 class="ch-title">
+      Let's Build Your<br/>
+      <span class="ch-title-accent">Security Solution</span>
+    </h1>
+    <p class="ch-desc">Get in touch with Netviz Solutions for CCTV installation, networking, surveillance, and more. We respond within minutes.</p>
+
+    <!-- Quick contact pills -->
+    <div class="ch-quick-contacts">
+      <a href="tel:7892225484" class="qc-pill qc-phone">
+        <div class="qcp-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+        </div>
+        <div>
+          <div class="qcp-label">Call Direct</div>
+          <div class="qcp-val">7892225484</div>
+        </div>
+        <span class="qcp-arrow">↗</span>
+      </a>
+      <a href="https://wa.me/917892225484" target="_blank" class="qc-pill qc-wa">
+        <div class="qcp-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div>
+          <div class="qcp-label">WhatsApp</div>
+          <div class="qcp-val">Chat Now</div>
+        </div>
+        <span class="qcp-arrow">↗</span>
+      </a>
+      <a href="mailto:netvizsolutions@gmail.com" class="qc-pill qc-email">
+        <div class="qcp-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <div class="qcp-label">Email Us</div>
+          <div class="qcp-val">netvizsolutions@gmail.com</div>
+        </div>
+        <span class="qcp-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero side visual -->
+  <div class="ch-visual" data-aos="fade-left">
+    <div class="ch-visual-inner">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80" alt="Contact Netviz Solutions" class="ch-img" />
+      <div class="ch-img-overlay"></div>
+      <!-- Floating stat cards -->
+      <div class="ch-stat-card csc-1">
+        <div class="csc-icon">⚡</div>
+        <div>
+          <div class="csc-num">~15 min</div>
+          <div class="csc-lbl">Response Time</div>
+        </div>
+      </div>
+      <div class="ch-stat-card csc-2">
+        <div class="csc-icon">🌍</div>
+        <div>
+          <div class="csc-num">All India</div>
+          <div class="csc-lbl">Service Area</div>
+        </div>
+      </div>
+      <div class="ch-stat-card csc-3">
+        <div class="csc-icon">⭐</div>
+        <div>
+          <div class="csc-num">500+</div>
+          <div class="csc-lbl">Projects Done</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
-<!-- ============================================================
-   CONTACT GRID (ADVANCED)
-============================================================ -->
-<section class="contact-main">
-<div class="container contact-grid">
+<!-- ======================================================
+     MAIN CONTACT SECTION
+====================================================== -->
+<section class="contact-main-section">
+  <div class="cms-container">
 
-<!-- FORM -->
-<div class="contact-form glass">
-  <h2>Send a Message</h2>
+    <!-- LEFT: Contact Form -->
+    <div class="cms-form-side" data-aos="fade-right">
+      <div class="form-card">
+        <!-- Form card header -->
+        <div class="fc-header">
+          <div class="fc-header-left">
+            <div class="fc-title-tag">Send a Message</div>
+            <h2 class="fc-title">Get a <span class="fc-title-blue">Free Quote</span></h2>
+            <p class="fc-subtitle">Fill the form below and we'll get back to you within 15 minutes.</p>
+          </div>
+          <div class="fc-header-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
 
-  <form>
-    <div class="form-group">
-      <input type="text" required>
-      <label>Name</label>
+        <!-- Form -->
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name <span class="req">*</span></label>
+              <div class="input-wrap">
+                <span class="input-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number <span class="req">*</span></label>
+              <div class="input-wrap">
+                <span class="input-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+                </span>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <div class="input-wrap">
+                <span class="input-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="city" class="form-label">Your City <span class="req">*</span></label>
+              <div class="input-wrap">
+                <span class="input-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <input type="text" id="city" name="city" class="form-input" placeholder="e.g. Mumbai, Delhi..." required />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Service Required <span class="req">*</span></label>
+            <div class="service-chips" id="serviceChips">
+              <button type="button" class="chip" data-val="CCTV Installation">📷 CCTV Installation</button>
+              <button type="button" class="chip" data-val="Surveillance Systems">👁️ Surveillance</button>
+              <button type="button" class="chip" data-val="Networking Solutions">🌐 Networking</button>
+              <button type="button" class="chip" data-val="Router Setup">📡 Router Setup</button>
+              <button type="button" class="chip" data-val="Maintenance & AMC">🔧 Maintenance</button>
+              <button type="button" class="chip" data-val="Remote Monitoring">🖥️ Remote Monitoring</button>
+              <button type="button" class="chip" data-val="Troubleshooting">💡 Troubleshooting</button>
+              <button type="button" class="chip" data-val="Other">⚙️ Other</button>
+            </div>
+            <input type="hidden" id="selectedService" name="service" />
+          </div>
+
+          <div class="form-group">
+            <label for="projectType" class="form-label">Project Type</label>
+            <div class="input-wrap">
+              <span class="input-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 7a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <select id="projectType" name="projectType" class="form-input form-select">
+                <option value="">Select project type...</option>
+                <option value="Residential">🏠 Residential Home / Apartment</option>
+                <option value="Commercial">🏪 Shop / Showroom</option>
+                <option value="Office">🏢 Office / Corporate</option>
+                <option value="Industrial">🏭 Warehouse / Industrial</option>
+                <option value="Other">⚙️ Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Your Message</label>
+            <div class="input-wrap textarea-wrap">
+              <span class="input-icon input-icon-ta">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Describe your requirements, number of cameras, area size, etc..." rows="4"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="form-submit" id="formSubmit">
+            <span class="submit-text">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Send Message
+            </span>
+            <span class="submit-shine"></span>
+          </button>
+
+          <!-- Success message (hidden) -->
+          <div class="form-success" id="formSuccess">
+            <div class="fs-icon">✅</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you! We'll contact you within 15 minutes.</p>
+          </div>
+        </form>
+      </div>
     </div>
 
-    <div class="form-group">
-      <input type="email" required>
-      <label>Email</label>
+    <!-- RIGHT: Contact Info -->
+    <div class="cms-info-side" data-aos="fade-left">
+
+      <!-- Info Cards -->
+      <div class="info-card ic-phone">
+        <div class="ic-glow"></div>
+        <div class="ic-icon-wrap">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+        </div>
+        <div class="ic-content">
+          <div class="ic-label">Call Us Anytime</div>
+          <a href="tel:7892225484" class="ic-value">+91 7892225484</a>
+          <div class="ic-sub">Mon–Sun · 24 hours available</div>
+        </div>
+        <div class="ic-badge ic-badge-live">
+          <span class="ic-live-dot"></span> Live
+        </div>
+      </div>
+
+      <div class="info-card ic-wa">
+        <div class="ic-glow ic-glow-wa"></div>
+        <div class="ic-icon-wrap ic-icon-wa">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div class="ic-content">
+          <div class="ic-label">WhatsApp</div>
+          <a href="https://wa.me/917892225484" target="_blank" class="ic-value">Send a Message</a>
+          <div class="ic-sub">Quick response guaranteed</div>
+        </div>
+        <a href="https://wa.me/917892225484" target="_blank" class="ic-action-btn">Chat →</a>
+      </div>
+
+      <div class="info-card ic-email">
+        <div class="ic-glow ic-glow-cyan"></div>
+        <div class="ic-icon-wrap ic-icon-cyan">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ic-content">
+          <div class="ic-label">Email Us</div>
+          <a href="mailto:netvizsolutions@gmail.com" class="ic-value ic-value-sm">netvizsolutions@gmail.com</a>
+          <div class="ic-sub">We reply within 2 hours</div>
+        </div>
+      </div>
+
+      <div class="info-card ic-location">
+        <div class="ic-icon-wrap ic-icon-gold">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="ic-content">
+          <div class="ic-label">Service Area</div>
+          <div class="ic-value">All Over India 🇮🇳</div>
+          <div class="ic-sub">28+ States · 100+ Cities</div>
+        </div>
+      </div>
+
+      <!-- Owner Direct Contact -->
+      <div class="owner-direct-card">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80" alt="Moin Omne" class="odc-img" />
+        <div class="odc-content">
+          <div class="odc-tag">Direct Contact</div>
+          <div class="odc-name">Moin Omne</div>
+          <div class="odc-role">Founder & Technical Head</div>
+          <div class="odc-actions">
+            <a href="tel:7892225484" class="odc-btn odc-call">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              Call
+            </a>
+            <a href="https://wa.me/917892225484" target="_blank" class="odc-btn odc-msg">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="odc-status">
+          <span class="odc-dot"></span>
+          Available Now
+        </div>
+      </div>
+
+      <!-- Response time card -->
+      <div class="response-card">
+        <div class="rc-left">
+          <div class="rc-icon">⚡</div>
+          <div>
+            <div class="rc-title">Super Fast Response</div>
+            <div class="rc-sub">Average reply time under 15 minutes</div>
+          </div>
+        </div>
+        <div class="rc-bar-wrap">
+          <div class="rc-bar rc-bar-fill"></div>
+        </div>
+      </div>
+
     </div>
-
-    <div class="form-group">
-      <input type="tel" required>
-      <label>Phone</label>
-    </div>
-
-    <div class="form-group">
-      <textarea required></textarea>
-      <label>Requirement</label>
-    </div>
-
-    <button class="btn-submit">Send Inquiry</button>
-  </form>
-</div>
-
-<!-- INFO -->
-<div class="contact-info glass">
-  <h2>Contact Info</h2>
-
-  <div class="info-box">
-    📞 <a href="tel:7892225484">7892225484</a>
   </div>
-
-  <div class="info-box">
-    ✉️ <a href="mailto:netvizsolutions@gmail.com">Email Us</a>
-  </div>
-
-  <div class="info-box">
-    📍 All Over India
-  </div>
-
-  <div class="info-highlight">
-    <h3>Why Choose Us</h3>
-    <ul>
-      <li>Fast Installation</li>
-      <li>24×7 Support</li>
-      <li>Affordable</li>
-    </ul>
-  </div>
-</div>
-
-</div>
 </section>
 
-<!-- FOOTER (COPY SAME FROM SERVICES) -->
+
+<!-- ======================================================
+     WHY CONTACT US SECTION
+====================================================== -->
+<section class="why-contact-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Why Reach Out</span>
+      <h2 class="section-title">What Happens When You Contact Us</h2>
+      <p class="section-desc">We make the process simple, fast, and completely hassle-free for you.</p>
+    </div>
+    <div class="wc-steps" data-aos="fade-up" data-aos-delay="100">
+      <div class="wcs-step">
+        <div class="wcs-num">01</div>
+        <div class="wcs-icon">📞</div>
+        <h3>You Contact Us</h3>
+        <p>Call, WhatsApp, or fill our form. Tell us what you need.</p>
+      </div>
+      <div class="wcs-arrow">→</div>
+      <div class="wcs-step">
+        <div class="wcs-num">02</div>
+        <div class="wcs-icon">💬</div>
+        <h3>We Respond Fast</h3>
+        <p>Our team replies within 15 minutes with initial guidance.</p>
+      </div>
+      <div class="wcs-arrow">→</div>
+      <div class="wcs-step">
+        <div class="wcs-num">03</div>
+        <div class="wcs-icon">📋</div>
+        <h3>Free Site Survey</h3>
+        <p>Expert visits your location for a detailed free assessment.</p>
+      </div>
+      <div class="wcs-arrow">→</div>
+      <div class="wcs-step">
+        <div class="wcs-num">04</div>
+        <div class="wcs-icon">🚀</div>
+        <h3>Installation Done</h3>
+        <p>Professional installation with full demo and 24×7 support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     FAQ SECTION
+====================================================== -->
+<section class="faq-section">
+  <div class="faq-bg"></div>
+  <div class="container">
+    <div class="faq-inner">
+      <div class="faq-left" data-aos="fade-right">
+        <span class="section-tag section-tag-white">FAQ</span>
+        <h2 class="section-title faq-title">Common Questions</h2>
+        <p class="faq-desc">Have more questions? Call us directly or send a WhatsApp message.</p>
+        <a href="tel:7892225484" class="btn-white" style="margin-top:1.5rem">📞 Call Now</a>
+        <div class="faq-img-wrap">
+          <img src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?w=500&q=75" alt="Customer Support" class="faq-img" />
+        </div>
+      </div>
+      <div class="faq-right" data-aos="fade-left">
+        <div class="faq-list" id="faqList">
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Do you provide services across all of India?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Yes! Netviz Solutions provides services across all major cities and states in India — from metros like Delhi, Mumbai, Bangalore to smaller towns. No location is too far for us.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              How long does CCTV installation take?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>A typical residential CCTV installation (4–8 cameras) takes 4–8 hours. Commercial and industrial projects may take 1–3 days depending on the scale and complexity.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Do you provide AMC (Annual Maintenance Contracts)?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Absolutely! We offer comprehensive Annual Maintenance Contracts (AMC) for all security and networking systems we install — including preventive maintenance, emergency support, and firmware updates.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Which camera brands do you support?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>We work with all leading brands including Hikvision, Dahua, CP Plus, Godrej, Samsung, Bosch, Axis, and more. We have no brand limitation — we recommend the best option based on your budget and requirements.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Is the site survey and quote free?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Yes, the site survey and quotation are completely free of charge. Our expert will visit your location, assess your requirements, and provide a detailed transparent quote with no hidden costs.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Can I monitor cameras remotely on my phone?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Yes! All our installations include mobile app setup so you can view live footage and playback recordings from your smartphone or PC from anywhere in the world.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
 <footer class="site-footer">
-  <!-- paste same footer -->
+  <div class="footer-top">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <div class="footer-logo-icon">
+            <svg width="30" height="30" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="#0057FF" stroke-width="2"/><circle cx="18" cy="18" r="8" fill="#0057FF" opacity="0.2"/><circle cx="18" cy="18" r="4" fill="#0057FF"/><line x1="18" y1="1" x2="18" y2="8" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="18" y1="28" x2="18" y2="35" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="18" x2="8" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="28" y1="18" x2="35" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="footer-logo-text"><span class="flm">Netviz</span><span class="fls">Solutions</span></div>
+        </a>
+        <p class="footer-tagline">Smart Security. Reliable Networking.<br/>Trusted Solutions.</p>
+        <div class="footer-contact-info">
+          <a href="tel:7892225484" class="fci-item"><span class="fci-icon">📞</span><span>7892225484</span></a>
+          <a href="mailto:netvizsolutions@gmail.com" class="fci-item"><span class="fci-icon">✉️</span><span>netvizsolutions@gmail.com</span></a>
+          <div class="fci-item"><span class="fci-icon">📍</span><span>All Over India</span></div>
+        </div>
+        <a href="https://wa.me/917892225484" target="_blank" class="whatsapp-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="service-area.html">Service Area</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services/cctv-installation.html">CCTV Installation</a></li>
+          <li><a href="services/surveillance-systems.html">Surveillance Systems</a></li>
+          <li><a href="services/networking-solutions.html">Networking Solutions</a></li>
+          <li><a href="services/router-setup.html">Router & Network Setup</a></li>
+          <li><a href="services/maintenance.html">Maintenance</a></li>
+          <li><a href="services/remote-monitoring.html">Remote Monitoring</a></li>
+          <li><a href="services/troubleshooting.html">Troubleshooting</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Service Coverage</h4>
+        <div class="footer-coverage">
+          <div class="coverage-badge">🇮🇳 Pan India Service</div>
+          <p class="coverage-text">Professional security & networking services across all major cities and states in India.</p>
+          <a href="service-area.html" class="coverage-link">View Full Service Area →</a>
+        </div>
+        <div class="footer-cta-box">
+          <p>Need a quick solution?</p>
+          <a href="contact.html" class="footer-cta-btn">Get Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-container footer-bottom-inner">
+      <p class="footer-copy">© 2025 Netviz Solutions. All Rights Reserved.</p>
+      <p class="footer-credit">Designed &amp; Developed by <a href="https://nexaaweb.github.io/" target="_blank" rel="noopener" class="nexaa-link">@nexaaaweb</a></p>
+    </div>
+  </div>
 </footer>
 
+<a href="https://wa.me/917892225484" target="_blank" class="float-whatsapp" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="float-pulse"></span>
+</a>
 
 <script>
-/* header */
-const hdr = document.getElementById('siteHeader');
-window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 20));
+  /* Header */
+  const hdr = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 20));
+  document.getElementById('hamburger').addEventListener('click', function(){
+    this.classList.toggle('open');
+    document.getElementById('navMobile').classList.toggle('open');
+  });
 
-/* particles */
-const field = document.getElementById('particleField');
-for(let i=0;i<40;i++){
-  let p=document.createElement('div');
-  p.className='particle';
-  p.style.left=Math.random()*100+'%';
-  p.style.top=Math.random()*100+'%';
-  field.appendChild(p);
-}
+  /* AOS */
+  document.querySelectorAll('[data-aos]').forEach(el => {
+    new IntersectionObserver((entries) => {
+      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('aos-animate'); });
+    }, { threshold: 0.1 }).observe(el);
+  });
+
+  /* Service chips */
+  document.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', function(){
+      document.querySelectorAll('.chip').forEach(c => c.classList.remove('chip-active'));
+      this.classList.add('chip-active');
+      document.getElementById('selectedService').value = this.dataset.val;
+    });
+  });
+
+  /* Form submit */
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const btn = document.getElementById('formSubmit');
+    btn.classList.add('submitting');
+    btn.querySelector('.submit-text').innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="animation:spin 1s linear infinite"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="white" stroke-width="2" stroke-linecap="round"/></svg> Sending...`;
+    setTimeout(() => {
+      btn.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'flex';
+    }, 2000);
+  });
+
+  /* FAQ accordion */
+  function toggleFaq(btn){
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('faq-open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('faq-open');
+      i.querySelector('.faq-icon').textContent = '+';
+    });
+    if(!isOpen){
+      item.classList.add('faq-open');
+      btn.querySelector('.faq-icon').textContent = '×';
+    }
+  }
+
+  /* Animate response bar on scroll */
+  const bar = document.querySelector('.rc-bar-fill');
+  if(bar){
+    new IntersectionObserver((entries) => {
+      entries.forEach(e => { if(e.isIntersecting) bar.style.width = '85%'; });
+    }, { threshold: 0.5 }).observe(bar);
+  }
 </script>
 
+<style>
+  @keyframes spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+</style>
 </body>
 </html>
