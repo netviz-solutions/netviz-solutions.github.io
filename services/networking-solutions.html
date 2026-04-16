@@ -1,1 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Networking Solutions – Netviz Solutions</title>
+  <meta name="description" content="Professional wired & wireless networking solutions across India. LAN, WAN, WiFi, structured cabling for homes, offices & industries. Call 7892225484." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Nunito:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/networking-solutions.css" />
+</head>
+<body>
 
+<!-- ═══════════════════════════════════════════
+     HEADER
+═══════════════════════════════════════════ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-container">
+    <a href="../index.html" class="logo">
+      <div class="logo-icon">
+        <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="17" stroke="#0057FF" stroke-width="2"/>
+          <circle cx="18" cy="18" r="8" fill="#0057FF" opacity="0.15"/>
+          <circle cx="18" cy="18" r="4" fill="#0057FF"/>
+          <line x1="18" y1="1" x2="18" y2="8" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18" y1="28" x2="18" y2="35" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="1" y1="18" x2="8" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="28" y1="18" x2="35" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="5.4" y1="5.4" x2="10.5" y2="10.5" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="25.5" y1="25.5" x2="30.6" y2="30.6" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="30.6" y1="5.4" x2="25.5" y2="10.5" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="10.5" y1="25.5" x2="5.4" y2="30.6" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-main">Netviz</span>
+        <span class="logo-sub">Solutions</span>
+      </div>
+    </a>
+
+    <nav class="nav-desktop">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../about.html" class="nav-link">About</a>
+      <div class="nav-dropdown">
+        <a href="../services.html" class="nav-link active">
+          Services
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="cctv-installation.html">CCTV Installation</a>
+          <a href="surveillance-systems.html">Surveillance Systems</a>
+          <a href="networking-solutions.html" class="dd-active">Networking Solutions</a>
+          <a href="router-setup.html">Router & Network Setup</a>
+          <a href="maintenance.html">Maintenance</a>
+          <a href="remote-monitoring.html">Remote Monitoring</a>
+          <a href="troubleshooting.html">Troubleshooting</a>
+        </div>
+      </div>
+      <a href="../projects.html" class="nav-link">Projects</a>
+      <a href="../service-area.html" class="nav-link">Service Area</a>
+      <a href="../reviews.html" class="nav-link">Reviews</a>
+      <a href="../contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="tel:7892225484" class="header-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+      Call Now
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile">
+    <a href="../index.html" class="mob-link">Home</a>
+    <a href="../about.html" class="mob-link">About</a>
+    <a href="../services.html" class="mob-link">Services</a>
+    <a href="../projects.html" class="mob-link">Projects</a>
+    <a href="../service-area.html" class="mob-link">Service Area</a>
+    <a href="../reviews.html" class="mob-link">Reviews</a>
+    <a href="../contact.html" class="mob-link">Contact</a>
+    <a href="tel:7892225484" class="mob-cta">📞 Call: 7892225484</a>
+  </nav>
+</header>
+
+
+<!-- ═══════════════════════════════════════════
+     HERO — NETWORK TOPOLOGY STYLE
+═══════════════════════════════════════════ -->
+<section class="net-hero">
+  <!-- Animated network nodes background -->
+  <div class="net-canvas" id="netCanvas"></div>
+  <!-- Glowing orbs -->
+  <div class="nh-orb nh-orb-1"></div>
+  <div class="nh-orb nh-orb-2"></div>
+
+  <div class="nh-content" data-aos="fade-up">
+    <div class="nh-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>›</span>
+      <a href="../services.html">Services</a>
+      <span>›</span>
+      <span>Networking Solutions</span>
+    </div>
+
+    <span class="nh-label">Service 03 — Networking</span>
+
+    <h1 class="nh-title">
+      Wireless &amp; Wired<br/>
+      <em>Networking Solutions</em><br/>
+      <span class="nh-title-sub">Built for Speed. Built to Last.</span>
+    </h1>
+
+    <p class="nh-desc">
+      From home WiFi to enterprise-grade LAN/WAN infrastructure — we design, install, and configure complete networking solutions that keep you connected reliably, everywhere in India.
+    </p>
+
+    <div class="nh-tag-row">
+      <span class="nh-chip">🌐 LAN / WAN</span>
+      <span class="nh-chip">📶 WiFi Setup</span>
+      <span class="nh-chip">🔌 Structured Cabling</span>
+      <span class="nh-chip">🔒 Network Security</span>
+      <span class="nh-chip">☁️ Cloud Networking</span>
+    </div>
+
+    <div class="nh-actions">
+      <a href="../contact.html" class="btn-net-primary">Get Free Quote</a>
+      <a href="tel:7892225484" class="btn-net-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+        7892225484
+      </a>
+    </div>
+  </div>
+
+  <!-- Animated Network Topology Visual -->
+  <div class="nh-topology" data-aos="fade-left">
+    <div class="topo-wrap">
+
+      <!-- Central hub -->
+      <div class="topo-hub">
+        <div class="hub-ring hub-ring-1"></div>
+        <div class="hub-ring hub-ring-2"></div>
+        <div class="hub-ring hub-ring-3"></div>
+        <div class="hub-core">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <circle cx="18" cy="18" r="17" stroke="#00D4FF" stroke-width="1.5"/>
+            <circle cx="18" cy="18" r="8" fill="#00D4FF" opacity="0.2"/>
+            <circle cx="18" cy="18" r="4" fill="#00D4FF"/>
+            <line x1="18" y1="1" x2="18" y2="8" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="18" y1="28" x2="18" y2="35" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="1" y1="18" x2="8" y2="18" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="28" y1="18" x2="35" y2="18" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span>Core</span>
+        </div>
+      </div>
+
+      <!-- Animated connection lines SVG -->
+      <svg class="topo-lines" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="200" y1="200" x2="200" y2="60"  stroke="url(#gl1)" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <line x1="200" y1="200" x2="330" y2="130" stroke="url(#gl2)" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <line x1="200" y1="200" x2="340" y2="270" stroke="url(#gl1)" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <line x1="200" y1="200" x2="200" y2="340" stroke="url(#gl2)" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <line x1="200" y1="200" x2="70"  y2="280" stroke="url(#gl1)" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <line x1="200" y1="200" x2="65"  y2="130" stroke="url(#gl2)" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <defs>
+          <linearGradient id="gl1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0057FF" stop-opacity="0.8"/><stop offset="100%" stop-color="#00D4FF" stop-opacity="0.3"/></linearGradient>
+          <linearGradient id="gl2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00D4FF" stop-opacity="0.8"/><stop offset="100%" stop-color="#0057FF" stop-opacity="0.3"/></linearGradient>
+        </defs>
+      </svg>
+
+      <!-- Device nodes -->
+      <div class="topo-node tn-top"    style="top:2%;  left:50%; transform:translateX(-50%)"><span>🖥️</span><p>Server</p></div>
+      <div class="topo-node tn-tr"     style="top:18%; right:4%"><span>💻</span><p>Desktop</p></div>
+      <div class="topo-node tn-br"     style="bottom:18%; right:2%"><span>📱</span><p>Mobile</p></div>
+      <div class="topo-node tn-bottom" style="bottom:2%; left:50%; transform:translateX(-50%)"><span>📡</span><p>Router</p></div>
+      <div class="topo-node tn-bl"     style="bottom:18%; left:2%"><span>🖨️</span><p>Printer</p></div>
+      <div class="topo-node tn-tl"     style="top:18%; left:4%"><span>📷</span><p>Camera</p></div>
+
+      <!-- Data packets traveling on lines -->
+      <div class="data-packet dp-1"></div>
+      <div class="data-packet dp-2"></div>
+      <div class="data-packet dp-3"></div>
+      <div class="data-packet dp-4"></div>
+
+      <!-- Speed badge -->
+      <div class="topo-speed-badge">
+        <span class="tsb-val">1 Gbps</span>
+        <span class="tsb-lbl">Network Speed</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom stats -->
+  <div class="nh-stats-strip">
+    <div class="nss-item"><span class="nss-num">300+</span><span class="nss-lbl">Networks Installed</span></div>
+    <div class="nss-sep"></div>
+    <div class="nss-item"><span class="nss-num">1 Gbps</span><span class="nss-lbl">Max Speed Achieved</span></div>
+    <div class="nss-sep"></div>
+    <div class="nss-item"><span class="nss-num">All India</span><span class="nss-lbl">Service Coverage</span></div>
+    <div class="nss-sep"></div>
+    <div class="nss-item"><span class="nss-num">24×7</span><span class="nss-lbl">Network Support</span></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     WHAT WE OFFER — BENTO GRID
+═══════════════════════════════════════════ -->
+<section class="ns-section offer-section">
+  <div class="ns-container">
+    <div class="ns-header" data-aos="fade-up">
+      <span class="ns-tag">Our Networking Services</span>
+      <h2 class="ns-title">Complete Network Infrastructure<br/><em>from Planning to Execution</em></h2>
+      <p class="ns-desc">Whether it's a small home network or a multi-floor enterprise setup — we have the expertise to build it right.</p>
+    </div>
+
+    <!-- BENTO GRID -->
+    <div class="bento-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Large card — LAN -->
+      <div class="bento-card bento-large bento-blue">
+        <div class="bento-img-half">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=80" alt="LAN Setup" class="bento-img"/>
+          <div class="bento-img-ov"></div>
+        </div>
+        <div class="bento-body">
+          <div class="bento-icon">🔌</div>
+          <h3>LAN / WAN Setup</h3>
+          <p>Complete Local Area Network and Wide Area Network design and installation for offices, buildings, and campuses. Structured ethernet cabling, switches, and patch panels — all professionally installed.</p>
+          <div class="bento-tags">
+            <span>Cat6 / Cat6A</span>
+            <span>Gigabit Switches</span>
+            <span>Patch Panels</span>
+            <span>Server Room Setup</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WiFi Solutions -->
+      <div class="bento-card bento-cyan">
+        <div class="bento-icon-top">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 6 0 016.95 0M12 20h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <img src="https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=500&q=75" alt="WiFi" class="bento-half-img"/>
+        <h3>WiFi Network Design</h3>
+        <p>Seamless wireless coverage with zero dead zones. We plan access point placement using signal mapping for full coverage.</p>
+        <div class="bento-tags">
+          <span>WiFi 6</span>
+          <span>Access Points</span>
+          <span>Mesh Network</span>
+        </div>
+      </div>
+
+      <!-- Network Security -->
+      <div class="bento-card bento-dark">
+        <div class="bento-icon-top bento-icon-gold">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Network Security</h3>
+        <p>Firewall setup, VLAN segmentation, VPN configuration, and intrusion prevention to keep your network safe from threats.</p>
+        <div class="bento-tags">
+          <span>Firewall Config</span>
+          <span>VPN Setup</span>
+          <span>VLAN</span>
+        </div>
+        <div class="bento-dark-stat">
+          <span class="bds-val">99.9%</span>
+          <span class="bds-lbl">Uptime Guaranteed</span>
+        </div>
+      </div>
+
+      <!-- Structured Cabling -->
+      <div class="bento-card bento-green">
+        <div class="bento-icon-top bento-icon-green">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M8 9l3 3-3 3m5 0h3M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=500&q=75" alt="Cabling" class="bento-half-img bento-half-img-sm"/>
+        <h3>Structured Cabling</h3>
+        <p>Clean, organized, and future-proof cabling solutions with proper labeling, cable management, and documentation.</p>
+        <div class="bento-tags">
+          <span>Cat6 Cabling</span>
+          <span>Fiber Optic</span>
+        </div>
+      </div>
+
+      <!-- ISP / Bandwidth -->
+      <div class="bento-card bento-purple">
+        <div class="bento-icon-top bento-icon-purple">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Bandwidth & QoS</h3>
+        <p>Smart bandwidth management and Quality of Service configuration — prioritize video calls, CCTV streams, and critical business traffic.</p>
+        <div class="bento-tags">
+          <span>QoS Config</span>
+          <span>Load Balancing</span>
+          <span>Failover</span>
+        </div>
+      </div>
+
+      <!-- Remote Support -->
+      <div class="bento-card bento-light bento-wide">
+        <div class="bento-split">
+          <div class="bento-split-text">
+            <div class="bento-icon-top">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Remote & On-Site Support</h3>
+            <p>Fast diagnosis and resolution of network issues — remote access support available within minutes, on-site visits for complex problems.</p>
+            <div class="bento-tags">
+              <span>Remote Diagnosis</span>
+              <span>On-Site Visit</span>
+              <span>24×7 Helpline</span>
+              <span>Network Monitoring</span>
+            </div>
+          </div>
+          <img src="https://images.unsplash.com/photo-1551808525-51a94da548ce?w=500&q=75" alt="Support" class="bento-split-img"/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     WHO NEEDS IT — SECTORS
+═══════════════════════════════════════════ -->
+<section class="ns-section sectors-section">
+  <div class="ns-container">
+    <div class="ns-header" data-aos="fade-up">
+      <span class="ns-tag">Who We Serve</span>
+      <h2 class="ns-title">Networking Solutions for<br/><em>Every Sector</em></h2>
+    </div>
+
+    <div class="sectors-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="sector-card">
+        <div class="sc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="Home" class="sc-img"/>
+          <div class="sc-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-emoji">🏠</div>
+          <h3>Residential</h3>
+          <p>Home WiFi setup, smart device networking, and fiber connection optimization for apartments and villas.</p>
+          <ul class="sc-list">
+            <li>Whole-home WiFi coverage</li>
+            <li>Smart TV / IoT device setup</li>
+            <li>Parental controls & security</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sector-card sector-featured">
+        <div class="sc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Office" class="sc-img"/>
+          <div class="sc-overlay"></div>
+          <span class="sc-badge">Most Requested</span>
+        </div>
+        <div class="sc-body">
+          <div class="sc-emoji">🏢</div>
+          <h3>Offices & Corporates</h3>
+          <p>Enterprise-grade LAN/WAN, secure WiFi, VLAN segmentation, and VPN for multi-floor and multi-branch offices.</p>
+          <ul class="sc-list">
+            <li>Structured Cat6 LAN cabling</li>
+            <li>Secure corporate WiFi</li>
+            <li>VPN & remote access</li>
+            <li>Multi-branch connectivity</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sector-card">
+        <div class="sc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80" alt="Industrial" class="sc-img"/>
+          <div class="sc-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-emoji">🏭</div>
+          <h3>Industrial & Warehouse</h3>
+          <p>Rugged industrial networking with long-range WiFi, barcode scanner support, and CCTV-integrated network setups.</p>
+          <ul class="sc-list">
+            <li>Industrial WiFi access points</li>
+            <li>Barcode & scanner networks</li>
+            <li>IP CCTV integration</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sector-card">
+        <div class="sc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80" alt="Retail" class="sc-img"/>
+          <div class="sc-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-emoji">🏪</div>
+          <h3>Retail & Showrooms</h3>
+          <p>POS system networks, guest WiFi, and integrated security camera networking for retail shops and showrooms.</p>
+          <ul class="sc-list">
+            <li>POS & billing network</li>
+            <li>Guest WiFi portal</li>
+            <li>CCTV network integration</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     PROCESS — DARK ANIMATED
+═══════════════════════════════════════════ -->
+<section class="ns-section ns-process-section">
+  <div class="nsp-bg"></div>
+  <div class="ns-container">
+    <div class="ns-header" data-aos="fade-up">
+      <span class="ns-tag ns-tag-white">How We Work</span>
+      <h2 class="ns-title nsp-title">Your Network, <em>Ready in 4 Steps</em></h2>
+    </div>
+
+    <div class="nsp-steps" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="nsp-step">
+        <div class="nsp-step-num">01</div>
+        <div class="nsp-icon-wrap">
+          <div class="nsp-pulse-ring"></div>
+          <span class="nsp-icon">📞</span>
+        </div>
+        <div class="nsp-step-content">
+          <h3>Initial Consultation</h3>
+          <p>Call or WhatsApp us. Describe your space, number of users, and connectivity goals. We offer free guidance instantly.</p>
+        </div>
+        <div class="nsp-connector"></div>
+      </div>
+
+      <div class="nsp-step">
+        <div class="nsp-step-num">02</div>
+        <div class="nsp-icon-wrap">
+          <div class="nsp-pulse-ring"></div>
+          <span class="nsp-icon">📐</span>
+        </div>
+        <div class="nsp-step-content">
+          <h3>Network Design</h3>
+          <p>Our engineer visits, surveys the site, maps cable routes and access point placement, then delivers a detailed plan.</p>
+        </div>
+        <div class="nsp-connector"></div>
+      </div>
+
+      <div class="nsp-step">
+        <div class="nsp-step-num">03</div>
+        <div class="nsp-icon-wrap">
+          <div class="nsp-pulse-ring"></div>
+          <span class="nsp-icon">🔧</span>
+        </div>
+        <div class="nsp-step-content">
+          <h3>Installation</h3>
+          <p>Clean, organized installation of cabling, switches, routers, and access points by our certified team.</p>
+        </div>
+        <div class="nsp-connector"></div>
+      </div>
+
+      <div class="nsp-step">
+        <div class="nsp-step-num">04</div>
+        <div class="nsp-icon-wrap">
+          <div class="nsp-pulse-ring"></div>
+          <span class="nsp-icon">✅</span>
+        </div>
+        <div class="nsp-step-content">
+          <h3>Testing & Handover</h3>
+          <p>Full network speed testing, documentation, and 24×7 post-installation support to keep your network always running.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     WHY CHOOSE — FEATURE SHOWCASE
+═══════════════════════════════════════════ -->
+<section class="ns-section why-net-section">
+  <div class="ns-container">
+    <div class="ns-why-inner">
+
+      <div class="ns-why-left" data-aos="fade-right">
+        <span class="ns-tag">Why Netviz for Networking</span>
+        <h2 class="ns-title">We Don't Just Install —<br/><em>We Engineer</em> Your Network</h2>
+        <p class="ns-why-para">Most networking setups fail because of poor planning. At Netviz Solutions, we start with a thorough site survey and network map before a single cable is laid. The result? A network that's fast, secure, and built to scale.</p>
+
+        <div class="ns-why-stats">
+          <div class="nws-item">
+            <span class="nws-num" data-count="300">0</span><span class="nws-num">+</span>
+            <span class="nws-lbl">Networks Deployed</span>
+          </div>
+          <div class="nws-item">
+            <span class="nws-num" data-count="99">0</span><span class="nws-num">%</span>
+            <span class="nws-lbl">Client Satisfaction</span>
+          </div>
+          <div class="nws-item">
+            <span class="nws-num" data-count="4">0</span><span class="nws-num">+</span>
+            <span class="nws-lbl">Years Experience</span>
+          </div>
+        </div>
+
+        <a href="../contact.html" class="btn-net-primary" style="margin-top:2rem">Get Free Consultation</a>
+      </div>
+
+      <div class="ns-why-right" data-aos="fade-left">
+        <div class="why-features-list">
+
+          <div class="wfl-item">
+            <div class="wfl-icon wfl-blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div class="wfl-text">
+              <h4>Expert Network Engineers</h4>
+              <p>Certified professionals with real-world experience in LAN, WAN, WiFi 6, fiber, and enterprise networking.</p>
+            </div>
+          </div>
+
+          <div class="wfl-item">
+            <div class="wfl-icon wfl-cyan">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="wfl-text">
+              <h4>Fast & Clean Installation</h4>
+              <p>Organized cabling, proper labeling, and thorough testing — we leave your space cleaner than we found it.</p>
+            </div>
+          </div>
+
+          <div class="wfl-item">
+            <div class="wfl-icon wfl-gold">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="wfl-text">
+              <h4>Security-First Approach</h4>
+              <p>Every network we build includes firewall configuration, access control, and best-practice security hardening.</p>
+            </div>
+          </div>
+
+          <div class="wfl-item">
+            <div class="wfl-icon wfl-green">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="wfl-text">
+              <h4>24×7 Network Support</h4>
+              <p>Round-the-clock monitoring and emergency support to ensure your network never lets you down.</p>
+            </div>
+          </div>
+
+          <div class="wfl-item">
+            <div class="wfl-icon wfl-blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="wfl-text">
+              <h4>All India Coverage</h4>
+              <p>We deploy networking solutions across all major cities and states — metro or tier-2, we reach everywhere.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     BRANDS / EQUIPMENT
+═══════════════════════════════════════════ -->
+<section class="ns-section brands-net-section">
+  <div class="ns-container">
+    <div class="ns-header" data-aos="fade-up">
+      <span class="ns-tag">Equipment We Use</span>
+      <h2 class="ns-title">Industry-Leading <em>Network Brands</em></h2>
+      <p class="ns-desc">We work with all top networking brands — no brand limitation. We recommend the right equipment for your budget and requirements.</p>
+    </div>
+
+    <div class="net-brands-grid" data-aos="fade-up" data-aos-delay="100">
+      <div class="nb-card"><div class="nb-name">Cisco</div><div class="nb-tag">Enterprise Leader</div></div>
+      <div class="nb-card"><div class="nb-name">TP-Link</div><div class="nb-tag">Best Value</div></div>
+      <div class="nb-card"><div class="nb-name">D-Link</div><div class="nb-tag">Reliable & Fast</div></div>
+      <div class="nb-card"><div class="nb-name">Netgear</div><div class="nb-tag">Pro Series</div></div>
+      <div class="nb-card"><div class="nb-name">Ubiquiti</div><div class="nb-tag">Enterprise WiFi</div></div>
+      <div class="nb-card"><div class="nb-name">Zyxel</div><div class="nb-tag">SMB Solutions</div></div>
+      <div class="nb-card"><div class="nb-name">Mikrotik</div><div class="nb-tag">Advanced Routing</div></div>
+      <div class="nb-card nb-card-plus"><div class="nb-name">+ More</div><div class="nb-tag">All Brands Welcome</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     OTHER SERVICES
+═══════════════════════════════════════════ -->
+<section class="ns-section other-services-section">
+  <div class="ns-container">
+    <div class="ns-header" data-aos="fade-up">
+      <span class="ns-tag">Explore More</span>
+      <h2 class="ns-title">Our Other <em>Services</em></h2>
+    </div>
+    <div class="other-services-grid" data-aos="fade-up" data-aos-delay="100">
+      <a href="cctv-installation.html"   class="os-card"><div class="os-icon">📷</div><div class="os-text"><h4>CCTV Installation</h4><p>HD & 4K camera setup</p></div><span class="os-arrow">→</span></a>
+      <a href="surveillance-systems.html" class="os-card"><div class="os-icon">👁️</div><div class="os-text"><h4>Surveillance Systems</h4><p>Complete surveillance design</p></div><span class="os-arrow">→</span></a>
+      <a href="router-setup.html"         class="os-card"><div class="os-icon">📡</div><div class="os-text"><h4>Router & Network Setup</h4><p>Config & optimization</p></div><span class="os-arrow">→</span></a>
+      <a href="maintenance.html"          class="os-card"><div class="os-icon">🔧</div><div class="os-text"><h4>Maintenance & AMC</h4><p>Annual contracts</p></div><span class="os-arrow">→</span></a>
+      <a href="remote-monitoring.html"    class="os-card"><div class="os-icon">🖥️</div><div class="os-text"><h4>Remote Monitoring</h4><p>Watch from anywhere</p></div><span class="os-arrow">→</span></a>
+      <a href="troubleshooting.html"      class="os-card"><div class="os-icon">💡</div><div class="os-text"><h4>Troubleshooting</h4><p>Fast diagnosis & support</p></div><span class="os-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     CTA
+═══════════════════════════════════════════ -->
+<section class="ns-cta-section">
+  <div class="ns-cta-bg"></div>
+  <div class="ns-container">
+    <div class="ns-cta-inner" data-aos="zoom-in">
+      <div class="ns-cta-icon">🌐</div>
+      <h2 class="ns-cta-title">Ready to Build a Better Network?</h2>
+      <p class="ns-cta-desc">Get a free site survey and network design consultation. Serving all cities and states across India.</p>
+      <div class="ns-cta-actions">
+        <a href="tel:7892225484" class="btn-cta-white">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+          Call: 7892225484
+        </a>
+        <a href="https://wa.me/917892225484" target="_blank" class="btn-cta-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+        <a href="../contact.html" class="btn-cta-outline">Free Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo">
+          <div class="footer-logo-icon"><svg width="30" height="30" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="#0057FF" stroke-width="2"/><circle cx="18" cy="18" r="8" fill="#0057FF" opacity="0.2"/><circle cx="18" cy="18" r="4" fill="#0057FF"/><line x1="18" y1="1" x2="18" y2="8" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="18" y1="28" x2="18" y2="35" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="18" x2="8" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="28" y1="18" x2="35" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div class="footer-logo-text"><span class="flm">Netviz</span><span class="fls">Solutions</span></div>
+        </a>
+        <p class="footer-tagline">Smart Security. Reliable Networking.<br/>Trusted Solutions.</p>
+        <div class="footer-contact-info">
+          <a href="tel:7892225484" class="fci-item"><span>📞</span><span>7892225484</span></a>
+          <a href="mailto:netvizsolutions@gmail.com" class="fci-item"><span>✉️</span><span>netvizsolutions@gmail.com</span></a>
+          <div class="fci-item"><span>📍</span><span>All Over India</span></div>
+        </div>
+        <a href="https://wa.me/917892225484" target="_blank" class="whatsapp-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="footer-col"><h4 class="footer-col-title">Quick Links</h4><ul class="footer-links"><li><a href="../index.html">Home</a></li><li><a href="../about.html">About Us</a></li><li><a href="../services.html">Services</a></li><li><a href="../projects.html">Projects</a></li><li><a href="../service-area.html">Service Area</a></li><li><a href="../reviews.html">Reviews</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-col-title">Our Services</h4><ul class="footer-links"><li><a href="cctv-installation.html">CCTV Installation</a></li><li><a href="surveillance-systems.html">Surveillance Systems</a></li><li><a href="networking-solutions.html">Networking Solutions</a></li><li><a href="router-setup.html">Router & Network Setup</a></li><li><a href="maintenance.html">Maintenance</a></li><li><a href="remote-monitoring.html">Remote Monitoring</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li></ul></div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Service Coverage</h4>
+        <div class="footer-coverage"><div class="coverage-badge">🇮🇳 Pan India Service</div><p class="coverage-text">Networking solutions across all major cities and states in India.</p><a href="../service-area.html" class="coverage-link">View Full Service Area →</a></div>
+        <div class="footer-cta-box"><p>Need a quick solution?</p><a href="../contact.html" class="footer-cta-btn">Get Free Quote</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-container footer-bottom-inner">
+      <p class="footer-copy">© 2025 Netviz Solutions. All Rights Reserved.</p>
+      <p class="footer-credit">Designed &amp; Developed by <a href="https://nexaaweb.github.io/" target="_blank" rel="noopener" class="nexaa-link">@nexaaaweb</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/917892225484" target="_blank" class="float-whatsapp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="float-pulse"></span>
+</a>
+
+<script>
+  /* Header */
+  const hdr = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 20));
+  document.getElementById('hamburger').addEventListener('click', function(){
+    this.classList.toggle('open');
+    document.getElementById('navMobile').classList.toggle('open');
+  });
+
+  /* AOS */
+  document.querySelectorAll('[data-aos]').forEach(el => {
+    new IntersectionObserver((e) => {
+      e.forEach(x => { if(x.isIntersecting) x.target.classList.add('aos-animate'); });
+    }, { threshold: 0.08 }).observe(el);
+  });
+
+  /* Counter animation */
+  document.querySelectorAll('[data-count]').forEach(el => {
+    new IntersectionObserver((e) => {
+      e.forEach(x => {
+        if(x.isIntersecting){
+          const target = +x.target.dataset.count;
+          let cur = 0;
+          const step = Math.ceil(target / 60);
+          const t = setInterval(() => {
+            cur = Math.min(cur + step, target);
+            x.target.textContent = cur;
+            if(cur >= target) clearInterval(t);
+          }, 25);
+          x.target._obs?.unobserve(x.target);
+        }
+      });
+    }, { threshold: 0.5 }).observe(el);
+  });
+
+  /* Network node animation canvas */
+  const canvas = document.getElementById('netCanvas');
+  if(canvas){
+    const nodes = [];
+    for(let i = 0; i < 25; i++){
+      const d = document.createElement('div');
+      d.className = 'net-node';
+      d.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*5}s;animation-duration:${4+Math.random()*4}s;`;
+      canvas.appendChild(d);
+    }
+  }
+</script>
+</body>
+</html>
