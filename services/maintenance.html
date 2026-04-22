@@ -1,1 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maintenance & AMC – Netviz Solutions</title>
+  <meta name="description" content="Annual Maintenance Contracts (AMC) for CCTV and networking systems across India. Preventive maintenance, 24×7 support. Call Netviz Solutions: 7892225484" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800&family=Nunito:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/maintenance.css" />
+</head>
+<body>
 
+<!-- ════════════════════ HEADER ════════════════════ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-container">
+    <a href="../index.html" class="logo">
+      <div class="logo-icon">
+        <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="17" stroke="#0057FF" stroke-width="2"/>
+          <circle cx="18" cy="18" r="8" fill="#0057FF" opacity="0.15"/>
+          <circle cx="18" cy="18" r="4" fill="#0057FF"/>
+          <line x1="18" y1="1" x2="18" y2="8" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18" y1="28" x2="18" y2="35" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="1" y1="18" x2="8" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="28" y1="18" x2="35" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="5.4" y1="5.4" x2="10.5" y2="10.5" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="25.5" y1="25.5" x2="30.6" y2="30.6" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="30.6" y1="5.4" x2="25.5" y2="10.5" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="10.5" y1="25.5" x2="5.4" y2="30.6" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="logo-text"><span class="logo-main">Netviz</span><span class="logo-sub">Solutions</span></div>
+    </a>
+    <nav class="nav-desktop">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../about.html" class="nav-link">About</a>
+      <div class="nav-dropdown">
+        <a href="../services.html" class="nav-link active">Services
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="cctv-installation.html">CCTV Installation</a>
+          <a href="surveillance-systems.html">Surveillance Systems</a>
+          <a href="networking-solutions.html">Networking Solutions</a>
+          <a href="router-setup.html">Router & Network Setup</a>
+          <a href="maintenance.html" class="dd-active">Maintenance & AMC</a>
+          <a href="remote-monitoring.html">Remote Monitoring</a>
+          <a href="troubleshooting.html">Troubleshooting</a>
+        </div>
+      </div>
+      <a href="../projects.html" class="nav-link">Projects</a>
+      <a href="../service-area.html" class="nav-link">Service Area</a>
+      <a href="../reviews.html" class="nav-link">Reviews</a>
+      <a href="../contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="tel:7892225484" class="header-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+      Call Now
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="../index.html" class="mob-link">Home</a>
+    <a href="../about.html" class="mob-link">About</a>
+    <button class="mob-dropdown-btn" id="mobServBtn">Services
+      <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <div class="mob-sub-menu" id="mobSubMenu">
+      <a href="cctv-installation.html">📷 CCTV Installation</a>
+      <a href="surveillance-systems.html">👁️ Surveillance Systems</a>
+      <a href="networking-solutions.html">🌐 Networking Solutions</a>
+      <a href="router-setup.html">📡 Router & Network Setup</a>
+      <a href="maintenance.html">🔧 Maintenance & AMC</a>
+      <a href="remote-monitoring.html">🖥️ Remote Monitoring</a>
+      <a href="troubleshooting.html">💡 Troubleshooting</a>
+    </div>
+    <a href="../projects.html" class="mob-link">Projects</a>
+    <a href="../service-area.html" class="mob-link">Service Area</a>
+    <a href="../reviews.html" class="mob-link">Reviews</a>
+    <a href="../contact.html" class="mob-link">Contact</a>
+    <a href="tel:7892225484" class="mob-cta">📞 Call: 7892225484</a>
+  </nav>
+</header>
+
+
+<!-- ════════════════════ HERO ════════════════════ -->
+<section class="mn-hero">
+  <div class="mn-hero-grid"></div>
+  <div class="mn-hero-orb orb1"></div>
+  <div class="mn-hero-orb orb2"></div>
+
+  <!-- Animated gear bg elements -->
+  <div class="gear-wrap">
+    <div class="gear gear-lg">⚙️</div>
+    <div class="gear gear-sm">⚙️</div>
+    <div class="gear gear-md">⚙️</div>
+  </div>
+
+  <!-- Floating health cards -->
+  <div class="health-card hc1">
+    <div class="hc-bar-wrap">
+      <div class="hc-label">System Health</div>
+      <div class="hc-bar-track"><div class="hc-bar-fill hc-fill-green" style="width:95%"></div></div>
+      <div class="hc-pct">95%</div>
+    </div>
+    <div class="hc-status"><span class="hc-dot hc-dot-green"></span>All Systems Healthy</div>
+  </div>
+  <div class="health-card hc2">
+    <div class="hc-icon">🔧</div>
+    <div>
+      <div class="hc-title">Next Service Due</div>
+      <div class="hc-sub">3 months away</div>
+    </div>
+    <div class="hc-chip">On Track</div>
+  </div>
+  <div class="health-card hc3">
+    <div class="hc-icon">📋</div>
+    <div>
+      <div class="hc-title">AMC Active</div>
+      <div class="hc-sub">365 days coverage</div>
+    </div>
+    <span class="hc-dot hc-dot-green"></span>
+  </div>
+
+  <div class="mnh-content" data-aos="fade-up">
+    <div class="mnh-breadcrumb">
+      <a href="../index.html">Home</a><span>›</span>
+      <a href="../services.html">Services</a><span>›</span>
+      <span>Maintenance & AMC</span>
+    </div>
+    <div class="mnh-eyebrow">
+      <span class="mnh-icon-badge">🔧</span>
+      Service 05 · Annual Maintenance
+    </div>
+    <h1 class="mnh-title">
+      Keep Your System<br/>
+      <em>Running Like New</em><br/>
+      <span class="mnh-sub">Year After Year.</span>
+    </h1>
+    <p class="mnh-desc">Our Annual Maintenance Contracts (AMC) ensure your CCTV and networking systems stay in peak condition — with scheduled servicing, firmware updates, cleaning, and 24×7 emergency support all year round.</p>
+
+    <div class="mnh-chips">
+      <span class="mnh-chip">✓ Preventive Maintenance</span>
+      <span class="mnh-chip">✓ Firmware Updates</span>
+      <span class="mnh-chip">✓ Camera Cleaning</span>
+      <span class="mnh-chip">✓ 24×7 Emergency</span>
+      <span class="mnh-chip">✓ Annual Contract</span>
+    </div>
+
+    <div class="mnh-actions">
+      <a href="../contact.html" class="btn-mn-primary">Get AMC Quote</a>
+      <a href="tel:7892225484" class="btn-mn-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+        7892225484
+      </a>
+    </div>
+
+    <div class="mnh-stats">
+      <div class="ms-item"><span class="ms-num">500+</span><span class="ms-lbl">Systems Maintained</span></div>
+      <div class="ms-div"></div>
+      <div class="ms-item"><span class="ms-num">4×</span><span class="ms-lbl">Yearly Service Visits</span></div>
+      <div class="ms-div"></div>
+      <div class="ms-item"><span class="ms-num">24×7</span><span class="ms-lbl">Emergency Support</span></div>
+      <div class="ms-div"></div>
+      <div class="ms-item"><span class="ms-num">All India</span><span class="ms-lbl">Coverage</span></div>
+    </div>
+  </div>
+
+  <!-- Hero right — maintenance calendar visual -->
+  <div class="mnh-visual" data-aos="fade-left">
+    <div class="amc-dashboard">
+      <div class="amd-header">
+        <div class="amd-dots"><span></span><span></span><span></span></div>
+        <span class="amd-title">AMC Service Dashboard</span>
+        <span class="amd-year">2025</span>
+      </div>
+
+      <div class="amd-body">
+        <!-- Service schedule calendar -->
+        <div class="amd-schedule">
+          <div class="amd-sch-title">Service Schedule</div>
+          <div class="amd-quarters">
+            <div class="amd-quarter amd-q-done">
+              <div class="amdq-num">Q1</div>
+              <div class="amdq-label">Jan–Mar</div>
+              <div class="amdq-status">✓ Done</div>
+            </div>
+            <div class="amd-quarter amd-q-done">
+              <div class="amdq-num">Q2</div>
+              <div class="amdq-label">Apr–Jun</div>
+              <div class="amdq-status">✓ Done</div>
+            </div>
+            <div class="amd-quarter amd-q-upcoming">
+              <div class="amdq-num">Q3</div>
+              <div class="amdq-label">Jul–Sep</div>
+              <div class="amdq-status">Upcoming</div>
+            </div>
+            <div class="amd-quarter amd-q-pending">
+              <div class="amdq-num">Q4</div>
+              <div class="amdq-label">Oct–Dec</div>
+              <div class="amdq-status">Pending</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- System status bars -->
+        <div class="amd-systems">
+          <div class="amd-sys-title">System Status</div>
+          <div class="amd-sys-item">
+            <span class="asi-label">CCTV Cameras</span>
+            <div class="asi-bar"><div class="asi-fill" style="width:98%"></div></div>
+            <span class="asi-pct">98%</span>
+          </div>
+          <div class="amd-sys-item">
+            <span class="asi-label">Network Switches</span>
+            <div class="asi-bar"><div class="asi-fill" style="width:95%"></div></div>
+            <span class="asi-pct">95%</span>
+          </div>
+          <div class="amd-sys-item">
+            <span class="asi-label">DVR / NVR</span>
+            <div class="asi-bar"><div class="asi-fill" style="width:100%"></div></div>
+            <span class="asi-pct">100%</span>
+          </div>
+          <div class="amd-sys-item">
+            <span class="asi-label">Cabling</span>
+            <div class="asi-bar"><div class="asi-fill asi-fill-gold" style="width:88%"></div></div>
+            <span class="asi-pct">88%</span>
+          </div>
+        </div>
+
+        <!-- Next visit card -->
+        <div class="amd-next-visit">
+          <div class="anv-icon">📅</div>
+          <div>
+            <div class="anv-title">Next Visit</div>
+            <div class="anv-date">August 2025</div>
+          </div>
+          <div class="anv-badge">Scheduled</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating checkmark cards -->
+    <div class="check-card ck1">
+      <span class="ck-icon">✅</span>
+      <div>
+        <div class="ck-title">Last Serviced</div>
+        <div class="ck-sub">May 2025 — All Clear</div>
+      </div>
+    </div>
+    <div class="check-card ck2">
+      <span class="ck-icon">🛡️</span>
+      <div>
+        <div class="ck-title">Warranty Active</div>
+        <div class="ck-sub">Until Dec 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════ WHAT'S INCLUDED ════════════════════ -->
+<section class="mn-section mn-includes-section">
+  <div class="mn-container">
+    <div class="mn-header" data-aos="fade-up">
+      <span class="mn-tag">What's Covered</span>
+      <h2 class="mn-title">Everything Covered in<br/><em>Your AMC Package</em></h2>
+      <p class="mn-desc">A comprehensive maintenance contract that covers all aspects of your security and networking system — so you never have to worry.</p>
+    </div>
+
+    <div class="includes-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="inc-card inc-featured">
+        <div class="inc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=700&q=80" alt="Preventive Maintenance" class="inc-img"/>
+          <div class="inc-img-ov"></div>
+        </div>
+        <div class="inc-body">
+          <div class="inc-icon-box">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Preventive Maintenance Visits</h3>
+          <p>Scheduled quarterly visits (4× per year) where our certified technician inspects all cameras, connections, DVR/NVR, and network equipment — identifying and fixing issues before they cause downtime.</p>
+          <div class="inc-tags"><span>4 Visits/Year</span><span>Full Inspection</span><span>Written Report</span></div>
+        </div>
+      </div>
+
+      <div class="inc-card">
+        <div class="inc-icon-top">🧹</div>
+        <h3>Camera & Lens Cleaning</h3>
+        <p>Professional cleaning of all camera lenses, dome covers, and housings — removing dust, grime, and spider webs that degrade image quality over time.</p>
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&q=70" alt="Cleaning" class="inc-mini-img"/>
+        <div class="inc-tags"><span>Lens Polish</span><span>Dome Cleaning</span></div>
+      </div>
+
+      <div class="inc-card inc-dark">
+        <div class="inc-icon-top">🔄</div>
+        <h3>Firmware & Software Updates</h3>
+        <p>We keep your DVR, NVR, cameras, switches, and routers updated with the latest firmware — improving performance, security, and compatibility.</p>
+        <div class="inc-tags inc-tags-dark"><span>DVR/NVR</span><span>Camera Firmware</span><span>Router</span></div>
+        <div class="inc-dark-stat">
+          <span class="ids-num">Latest</span>
+          <span class="ids-lbl">Always up to date</span>
+        </div>
+      </div>
+
+      <div class="inc-card">
+        <div class="inc-icon-top">🔌</div>
+        <h3>Cable & Connection Check</h3>
+        <p>Inspection of all power cables, video cables, network cables, and connectors — tightening loose connections and replacing damaged sections.</p>
+        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400&q=70" alt="Cable Check" class="inc-mini-img"/>
+        <div class="inc-tags"><span>Power Lines</span><span>BNC / RJ45</span></div>
+      </div>
+
+      <div class="inc-card">
+        <div class="inc-icon-top">💾</div>
+        <h3>Storage & Recording Check</h3>
+        <p>Hard disk health scan, storage capacity check, recording schedule verification, and backup configuration review.</p>
+        <div class="inc-tags"><span>HDD Health</span><span>Backup Config</span></div>
+      </div>
+
+      <div class="inc-card inc-cyan">
+        <div class="inc-icon-top">📞</div>
+        <h3>24×7 Emergency Support</h3>
+        <p>Round-the-clock emergency support — remote or on-site — whenever something goes wrong. Priority response for AMC clients.</p>
+        <div class="inc-tags inc-tags-cyan"><span>Remote Fix</span><span>On-Site Visit</span><span>Priority Queue</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════ AMC PLANS ════════════════════ -->
+<section class="mn-section mn-plans-section">
+  <div class="mn-plans-bg"></div>
+  <div class="mn-container">
+    <div class="mn-header" data-aos="fade-up">
+      <span class="mn-tag mn-tag-white">AMC Plans</span>
+      <h2 class="mn-title mn-title-white">Choose Your <em>Maintenance Plan</em></h2>
+      <p class="mn-desc mn-desc-white">Flexible plans designed for every need — from small homes to large commercial installations.</p>
+    </div>
+
+    <div class="plans-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Basic -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <div class="plan-icon">🏠</div>
+          <h3 class="plan-name">Basic AMC</h3>
+          <p class="plan-subtitle">Residential & Small Shops</p>
+        </div>
+        <div class="plan-visits">
+          <span class="pv-num">2</span>
+          <span class="pv-label">Service Visits / Year</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="pf-check">✓</span> Camera & lens cleaning</li>
+          <li><span class="pf-check">✓</span> DVR/NVR basic check</li>
+          <li><span class="pf-check">✓</span> Connection inspection</li>
+          <li><span class="pf-check">✓</span> Phone support</li>
+          <li><span class="pf-check pf-no">✗</span> On-site emergency visits</li>
+          <li><span class="pf-check pf-no">✗</span> Firmware updates</li>
+        </ul>
+        <a href="../contact.html" class="plan-btn plan-btn-outline">Get Quote</a>
+      </div>
+
+      <!-- Standard — Featured -->
+      <div class="plan-card plan-featured">
+        <div class="plan-badge">⭐ Most Popular</div>
+        <div class="plan-header">
+          <div class="plan-icon">🏢</div>
+          <h3 class="plan-name">Standard AMC</h3>
+          <p class="plan-subtitle">Offices & Commercial</p>
+        </div>
+        <div class="plan-visits">
+          <span class="pv-num">4</span>
+          <span class="pv-label">Service Visits / Year</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="pf-check">✓</span> Full camera cleaning & polish</li>
+          <li><span class="pf-check">✓</span> DVR/NVR complete check</li>
+          <li><span class="pf-check">✓</span> Firmware updates</li>
+          <li><span class="pf-check">✓</span> Cable & power check</li>
+          <li><span class="pf-check">✓</span> Storage health scan</li>
+          <li><span class="pf-check">✓</span> 1 emergency on-site visit</li>
+          <li><span class="pf-check">✓</span> 24×7 phone support</li>
+        </ul>
+        <a href="../contact.html" class="plan-btn plan-btn-primary">Get Quote</a>
+      </div>
+
+      <!-- Premium -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <div class="plan-icon">🏭</div>
+          <h3 class="plan-name">Premium AMC</h3>
+          <p class="plan-subtitle">Industrial & Enterprise</p>
+        </div>
+        <div class="plan-visits">
+          <span class="pv-num">6</span>
+          <span class="pv-label">Service Visits / Year</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="pf-check">✓</span> Everything in Standard</li>
+          <li><span class="pf-check">✓</span> Network equipment service</li>
+          <li><span class="pf-check">✓</span> Unlimited emergency calls</li>
+          <li><span class="pf-check">✓</span> Priority 4-hour response</li>
+          <li><span class="pf-check">✓</span> Dedicated account manager</li>
+          <li><span class="pf-check">✓</span> Monthly status reports</li>
+        </ul>
+        <a href="../contact.html" class="plan-btn plan-btn-outline">Get Quote</a>
+      </div>
+
+    </div>
+
+    <div class="plans-note" data-aos="fade-up">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      All plans are fully customizable based on number of cameras, systems, and location. <a href="../contact.html">Contact us</a> for a tailored quote.
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════ MAINTENANCE SCHEDULE TIMELINE ════════════════════ -->
+<section class="mn-section mn-schedule-section">
+  <div class="mn-container">
+    <div class="mn-header" data-aos="fade-up">
+      <span class="mn-tag">Annual Schedule</span>
+      <h2 class="mn-title">What Happens Each <em>Quarter</em></h2>
+      <p class="mn-desc">A structured, documented maintenance cycle that keeps your system running at peak performance all year long.</p>
+    </div>
+
+    <div class="schedule-timeline" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="sch-quarter sq-q1">
+        <div class="sq-header">
+          <div class="sq-badge sq-badge-blue">Q1</div>
+          <div class="sq-period">January – March</div>
+        </div>
+        <div class="sq-icon">🌱</div>
+        <h3>Annual Kickoff Service</h3>
+        <ul class="sq-list">
+          <li>Full system inspection & documentation</li>
+          <li>Camera lens deep clean</li>
+          <li>DVR/NVR health diagnostics</li>
+          <li>Firmware upgrade across all devices</li>
+          <li>HDD health test & storage check</li>
+          <li>Remote access re-verification</li>
+        </ul>
+        <div class="sq-duration">Duration: ~4–6 hours</div>
+      </div>
+
+      <div class="sch-connector">
+        <div class="sc-line"></div>
+        <div class="sc-arrow">›</div>
+      </div>
+
+      <div class="sch-quarter sq-q2">
+        <div class="sq-header">
+          <div class="sq-badge sq-badge-cyan">Q2</div>
+          <div class="sq-period">April – June</div>
+        </div>
+        <div class="sq-icon">☀️</div>
+        <h3>Mid-Year Check</h3>
+        <ul class="sq-list">
+          <li>Camera position & angle re-check</li>
+          <li>Power supply voltage test</li>
+          <li>Cable & connector tightening</li>
+          <li>Night vision IR test</li>
+          <li>Motion detection recalibration</li>
+          <li>Software patch updates</li>
+        </ul>
+        <div class="sq-duration">Duration: ~2–3 hours</div>
+      </div>
+
+      <div class="sch-connector">
+        <div class="sc-line"></div>
+        <div class="sc-arrow">›</div>
+      </div>
+
+      <div class="sch-quarter sq-q3">
+        <div class="sq-header">
+          <div class="sq-badge sq-badge-gold">Q3</div>
+          <div class="sq-period">July – September</div>
+        </div>
+        <div class="sq-icon">🌧️</div>
+        <h3>Monsoon Readiness</h3>
+        <ul class="sq-list">
+          <li>Weatherproofing inspection</li>
+          <li>Outdoor camera seal check</li>
+          <li>Surge protector test</li>
+          <li>Earthing & grounding check</li>
+          <li>Backup power (UPS) test</li>
+          <li>Network stability check</li>
+        </ul>
+        <div class="sq-duration">Duration: ~2–4 hours</div>
+      </div>
+
+      <div class="sch-connector">
+        <div class="sc-line"></div>
+        <div class="sc-arrow">›</div>
+      </div>
+
+      <div class="sch-quarter sq-q4">
+        <div class="sq-header">
+          <div class="sq-badge sq-badge-green">Q4</div>
+          <div class="sq-period">October – December</div>
+        </div>
+        <div class="sq-icon">❄️</div>
+        <h3>Year-End Full Service</h3>
+        <ul class="sq-list">
+          <li>Complete system overhaul</li>
+          <li>Full camera deep clean</li>
+          <li>Annual performance report</li>
+          <li>AMC renewal discussion</li>
+          <li>Upgrade recommendations</li>
+          <li>All issues closed & documented</li>
+        </ul>
+        <div class="sq-duration">Duration: ~4–6 hours</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════ WHY AMC ════════════════════ -->
+<section class="mn-section mn-why-section">
+  <div class="mn-container">
+    <div class="mn-why-inner">
+
+      <div class="mn-why-left" data-aos="fade-right">
+        <div class="why-img-block">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80" alt="Professional Maintenance" class="why-img-main"/>
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&q=75" alt="Tools" class="why-img-second"/>
+          <div class="why-img-badge">
+            <div class="wib-num">99%</div>
+            <div class="wib-lbl">Uptime Guaranteed</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mn-why-right" data-aos="fade-left">
+        <span class="mn-tag">Why Choose AMC</span>
+        <h2 class="mn-title">Why Smart Owners <em>Choose AMC</em><br/>Over Pay-Per-Call</h2>
+        <p class="mn-why-para">Without a maintenance contract, most security systems degrade silently over months. Dust-clogged cameras, outdated firmware, and loose connections accumulate until a major failure occurs at the worst possible time.</p>
+        <p class="mn-why-para">With Netviz AMC, you get proactive care — problems are spotted and fixed before they become emergencies. The result? Lower long-term cost, zero surprise downtime, and complete peace of mind.</p>
+
+        <div class="why-compare">
+          <div class="wc-col wc-without">
+            <div class="wc-header">❌ Without AMC</div>
+            <ul>
+              <li>Cameras degrade unnoticed</li>
+              <li>Surprise failures at critical times</li>
+              <li>High emergency repair costs</li>
+              <li>Outdated firmware — security risks</li>
+              <li>No documentation of issues</li>
+            </ul>
+          </div>
+          <div class="wc-col wc-with">
+            <div class="wc-header">✅ With Netviz AMC</div>
+            <ul>
+              <li>Proactive system care all year</li>
+              <li>Zero surprise downtime</li>
+              <li>Fixed annual cost, no surprises</li>
+              <li>Always on latest firmware</li>
+              <li>Detailed quarterly reports</li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="../contact.html" class="btn-mn-primary" style="margin-top:2rem">Get AMC Quote Today</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════ STATS ════════════════════ -->
+<section class="mn-stats-section">
+  <div class="mn-container">
+    <div class="mn-stats-grid">
+      <div class="mnsg-item" data-aos="fade-up" data-aos-delay="0">
+        <div class="mnsg-icon">🔧</div>
+        <span class="mnsg-num" data-count="500">0</span><span class="mnsg-num">+</span>
+        <span class="mnsg-lbl">Systems Under AMC</span>
+      </div>
+      <div class="mnsg-div"></div>
+      <div class="mnsg-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="mnsg-icon">📅</div>
+        <span class="mnsg-num" data-count="2000">0</span><span class="mnsg-num">+</span>
+        <span class="mnsg-lbl">Service Visits Done</span>
+      </div>
+      <div class="mnsg-div"></div>
+      <div class="mnsg-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="mnsg-icon">⏰</div>
+        <span class="mnsg-num" data-count="99">0</span><span class="mnsg-num">%</span>
+        <span class="mnsg-lbl">System Uptime</span>
+      </div>
+      <div class="mnsg-div"></div>
+      <div class="mnsg-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="mnsg-icon">😊</div>
+        <span class="mnsg-num" data-count="100">0</span><span class="mnsg-num">%</span>
+        <span class="mnsg-lbl">Client Retention</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════ OTHER SERVICES ════════════════════ -->
+<section class="mn-section other-services-section">
+  <div class="mn-container">
+    <div class="mn-header" data-aos="fade-up">
+      <span class="mn-tag">Explore More</span>
+      <h2 class="mn-title">Our Other <em>Services</em></h2>
+    </div>
+    <div class="other-services-grid" data-aos="fade-up" data-aos-delay="100">
+      <a href="cctv-installation.html"    class="os-card"><div class="os-icon">📷</div><div class="os-text"><h4>CCTV Installation</h4><p>HD & 4K camera setup</p></div><span class="os-arrow">→</span></a>
+      <a href="surveillance-systems.html" class="os-card"><div class="os-icon">👁️</div><div class="os-text"><h4>Surveillance Systems</h4><p>Complete design & install</p></div><span class="os-arrow">→</span></a>
+      <a href="networking-solutions.html" class="os-card"><div class="os-icon">🌐</div><div class="os-text"><h4>Networking Solutions</h4><p>LAN, WAN & WiFi</p></div><span class="os-arrow">→</span></a>
+      <a href="router-setup.html"         class="os-card"><div class="os-icon">📡</div><div class="os-text"><h4>Router Setup</h4><p>Config & optimization</p></div><span class="os-arrow">→</span></a>
+      <a href="remote-monitoring.html"    class="os-card"><div class="os-icon">🖥️</div><div class="os-text"><h4>Remote Monitoring</h4><p>Watch from anywhere</p></div><span class="os-arrow">→</span></a>
+      <a href="troubleshooting.html"      class="os-card"><div class="os-icon">💡</div><div class="os-text"><h4>Troubleshooting</h4><p>Fast diagnosis & fix</p></div><span class="os-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════ CTA ════════════════════ -->
+<section class="mn-cta-section">
+  <div class="mn-cta-bg"></div>
+  <div class="mn-container">
+    <div class="mn-cta-inner" data-aos="zoom-in">
+      <div class="mn-cta-icon">🛡️</div>
+      <h2 class="mn-cta-title">Protect Your Investment<br/><em>with an AMC Today</em></h2>
+      <p class="mn-cta-desc">Get a customized Annual Maintenance Contract for your CCTV or networking system. Serving all cities and states across India.</p>
+      <div class="mn-cta-actions">
+        <a href="tel:7892225484" class="btn-cta-white">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+          Call: 7892225484
+        </a>
+        <a href="https://wa.me/917892225484?text=Hi%20Netviz%2C%20I%20want%20to%20know%20about%20AMC%20plans." target="_blank" class="btn-cta-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Ask on WhatsApp
+        </a>
+        <a href="../contact.html" class="btn-cta-outline">Free Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════ FOOTER ════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo">
+          <div class="footer-logo-icon"><svg width="30" height="30" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="#0057FF" stroke-width="2"/><circle cx="18" cy="18" r="8" fill="#0057FF" opacity="0.2"/><circle cx="18" cy="18" r="4" fill="#0057FF"/><line x1="18" y1="1" x2="18" y2="8" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="18" y1="28" x2="18" y2="35" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="18" x2="8" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="28" y1="18" x2="35" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div class="footer-logo-text"><span class="flm">Netviz</span><span class="fls">Solutions</span></div>
+        </a>
+        <p class="footer-tagline">Smart Security. Reliable Networking.<br/>Trusted Solutions.</p>
+        <div class="footer-contact-info">
+          <a href="tel:7892225484" class="fci-item"><span>📞</span><span>7892225484</span></a>
+          <a href="mailto:netvizsolutions@gmail.com" class="fci-item"><span>✉️</span><span>netvizsolutions@gmail.com</span></a>
+          <div class="fci-item"><span>📍</span><span>All Over India</span></div>
+        </div>
+        <a href="https://wa.me/917892225484" target="_blank" class="whatsapp-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="footer-col"><h4 class="footer-col-title">Quick Links</h4><ul class="footer-links"><li><a href="../index.html">Home</a></li><li><a href="../about.html">About Us</a></li><li><a href="../services.html">Services</a></li><li><a href="../projects.html">Projects</a></li><li><a href="../service-area.html">Service Area</a></li><li><a href="../reviews.html">Reviews</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-col-title">Our Services</h4><ul class="footer-links"><li><a href="cctv-installation.html">CCTV Installation</a></li><li><a href="surveillance-systems.html">Surveillance Systems</a></li><li><a href="networking-solutions.html">Networking Solutions</a></li><li><a href="router-setup.html">Router & Network Setup</a></li><li><a href="maintenance.html">Maintenance & AMC</a></li><li><a href="remote-monitoring.html">Remote Monitoring</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li></ul></div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Service Coverage</h4>
+        <div class="footer-coverage"><div class="coverage-badge">🇮🇳 Pan India Service</div><p class="coverage-text">AMC & maintenance services across all cities and states in India.</p><a href="../service-area.html" class="coverage-link">View Full Service Area →</a></div>
+        <div class="footer-cta-box"><p>Need an AMC plan?</p><a href="../contact.html" class="footer-cta-btn">Get Free Quote</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-container footer-bottom-inner">
+      <p class="footer-copy">© 2025 Netviz Solutions. All Rights Reserved.</p>
+      <p class="footer-credit">Designed &amp; Developed by <a href="https://nexaaweb.github.io/" target="_blank" rel="noopener" class="nexaa-link">@nexaaaweb</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/917892225484" target="_blank" class="float-whatsapp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="float-pulse"></span>
+</a>
+
+<script>
+  const hdr = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 20));
+  document.getElementById('hamburger').addEventListener('click', function(){
+    this.classList.toggle('open'); document.getElementById('navMobile').classList.toggle('open');
+  });
+  const msb = document.getElementById('mobServBtn');
+  const msm = document.getElementById('mobSubMenu');
+  if(msb && msm){ msb.addEventListener('click', function(){ this.classList.toggle('open'); msm.classList.toggle('open'); }); }
+  document.querySelectorAll('[data-aos]').forEach(el => {
+    new IntersectionObserver((e) => { e.forEach(x => { if(x.isIntersecting) x.target.classList.add('aos-animate'); }); }, { threshold: 0.08 }).observe(el);
+  });
+  document.querySelectorAll('[data-count]').forEach(el => {
+    new IntersectionObserver((e) => {
+      e.forEach(x => {
+        if(x.isIntersecting){
+          const t = +x.target.dataset.count; let c = 0;
+          const step = Math.ceil(t/60);
+          const timer = setInterval(() => { c = Math.min(c+step,t); x.target.textContent=c; if(c>=t) clearInterval(timer); }, 25);
+        }
+      });
+    }, { threshold: 0.5 }).observe(el);
+  });
+</script>
+</body>
+</html>
