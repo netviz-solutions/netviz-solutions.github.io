@@ -1,1 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Projects – Netviz Solutions</title>
+  <meta name="description" content="Explore Netviz Solutions' completed projects — CCTV installation, networking, surveillance for homes, offices, warehouses across India. Call 7892225484." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800&family=Nunito:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
 
+<!-- ════════════════════════ HEADER ════════════════════════ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="17" stroke="#0057FF" stroke-width="2"/>
+          <circle cx="18" cy="18" r="8" fill="#0057FF" opacity="0.15"/>
+          <circle cx="18" cy="18" r="4" fill="#0057FF"/>
+          <line x1="18" y1="1" x2="18" y2="8" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18" y1="28" x2="18" y2="35" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="1" y1="18" x2="8" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="28" y1="18" x2="35" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="5.4" y1="5.4" x2="10.5" y2="10.5" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="25.5" y1="25.5" x2="30.6" y2="30.6" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="30.6" y1="5.4" x2="25.5" y2="10.5" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="10.5" y1="25.5" x2="5.4" y2="30.6" stroke="#6AA9FF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="logo-text"><span class="logo-main">Netviz</span><span class="logo-sub">Solutions</span></div>
+    </a>
+    <nav class="nav-desktop">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <div class="nav-dropdown">
+        <a href="services.html" class="nav-link">Services
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="services/cctv-installation.html">CCTV Installation</a>
+          <a href="services/surveillance-systems.html">Surveillance Systems</a>
+          <a href="services/networking-solutions.html">Networking Solutions</a>
+          <a href="services/router-setup.html">Router & Network Setup</a>
+          <a href="services/maintenance.html">Maintenance & AMC</a>
+          <a href="services/remote-monitoring.html">Remote Monitoring</a>
+          <a href="services/troubleshooting.html">Troubleshooting</a>
+        </div>
+      </div>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="service-area.html" class="nav-link">Service Area</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="tel:7892225484" class="header-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+      Call Now
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="index.html" class="mob-link">Home</a>
+    <a href="about.html" class="mob-link">About</a>
+    <button class="mob-dropdown-btn" id="mobServBtn">Services
+      <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <div class="mob-sub-menu" id="mobSubMenu">
+      <a href="services/cctv-installation.html">📷 CCTV Installation</a>
+      <a href="services/surveillance-systems.html">👁️ Surveillance Systems</a>
+      <a href="services/networking-solutions.html">🌐 Networking Solutions</a>
+      <a href="services/router-setup.html">📡 Router & Network Setup</a>
+      <a href="services/maintenance.html">🔧 Maintenance & AMC</a>
+      <a href="services/remote-monitoring.html">🖥️ Remote Monitoring</a>
+      <a href="services/troubleshooting.html">💡 Troubleshooting</a>
+    </div>
+    <a href="projects.html" class="mob-link">Projects</a>
+    <a href="service-area.html" class="mob-link">Service Area</a>
+    <a href="reviews.html" class="mob-link">Reviews</a>
+    <a href="contact.html" class="mob-link">Contact</a>
+    <a href="tel:7892225484" class="mob-cta">📞 Call: 7892225484</a>
+  </nav>
+</header>
+
+
+<!-- ════════════════════════ HERO ════════════════════════ -->
+<section class="pj-hero">
+  <div class="pjh-bg-grid"></div>
+  <div class="pjh-orb pjh-orb1"></div>
+  <div class="pjh-orb pjh-orb2"></div>
+
+  <!-- Floating project counter cards -->
+  <div class="pjh-float-card fc1">
+    <span class="pfc-icon">📷</span>
+    <div>
+      <div class="pfc-num">500+</div>
+      <div class="pfc-lbl">Cameras Installed</div>
+    </div>
+  </div>
+  <div class="pjh-float-card fc2">
+    <span class="pfc-icon">🌐</span>
+    <div>
+      <div class="pfc-num">300+</div>
+      <div class="pfc-lbl">Networks Built</div>
+    </div>
+  </div>
+  <div class="pjh-float-card fc3">
+    <span class="pfc-icon">🏙️</span>
+    <div>
+      <div class="pfc-num">28+</div>
+      <div class="pfc-lbl">States Covered</div>
+    </div>
+  </div>
+
+  <div class="pjh-content" data-aos="fade-up">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>›</span><span>Projects</span>
+    </div>
+    <div class="pjh-eyebrow">
+      <span class="pjh-dot"></span>
+      500+ Projects Completed
+    </div>
+    <h1 class="pjh-title">
+      Our Work Speaks<br/>
+      <em>For Itself</em>
+    </h1>
+    <p class="pjh-desc">From small homes to large industrial complexes — every project is delivered with the same precision, quality, and dedication. Browse our completed projects across India.</p>
+
+    <div class="pjh-stats">
+      <div class="ps-item">
+        <span class="ps-num" data-count="500">0</span><span class="ps-num">+</span>
+        <span class="ps-lbl">Projects Done</span>
+      </div>
+      <div class="ps-sep"></div>
+      <div class="ps-item">
+        <span class="ps-num" data-count="200">0</span><span class="ps-num">+</span>
+        <span class="ps-lbl">Happy Clients</span>
+      </div>
+      <div class="ps-sep"></div>
+      <div class="ps-item">
+        <span class="ps-num" data-count="4">0</span><span class="ps-num">+</span>
+        <span class="ps-lbl">Years Experience</span>
+      </div>
+      <div class="ps-sep"></div>
+      <div class="ps-item">
+        <span class="ps-num">All India</span>
+        <span class="ps-lbl">Coverage</span>
+      </div>
+    </div>
+
+    <div class="pjh-actions">
+      <a href="contact.html" class="btn-pj-primary">Start Your Project</a>
+      <a href="tel:7892225484" class="btn-pj-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+        7892225484
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero mosaic of project images -->
+  <div class="pjh-mosaic" data-aos="fade-left">
+    <div class="pm-col pm-col1">
+      <div class="pm-img-wrap pm-tall">
+        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&q=80" alt="CCTV Project" class="pm-img"/>
+        <div class="pm-img-ov"></div>
+        <div class="pm-tag">CCTV · Warehouse</div>
+      </div>
+      <div class="pm-img-wrap">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&q=80" alt="Network Project" class="pm-img"/>
+        <div class="pm-img-ov"></div>
+        <div class="pm-tag">Network · Office</div>
+      </div>
+    </div>
+    <div class="pm-col pm-col2">
+      <div class="pm-img-wrap">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=80" alt="Office Project" class="pm-img"/>
+        <div class="pm-img-ov"></div>
+        <div class="pm-tag">Security · Corporate</div>
+      </div>
+      <div class="pm-img-wrap pm-tall">
+        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&q=80" alt="Residential" class="pm-img"/>
+        <div class="pm-img-ov"></div>
+        <div class="pm-tag">CCTV · Residential</div>
+      </div>
+    </div>
+    <div class="pm-col pm-col3">
+      <div class="pm-img-wrap pm-tall2">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&q=80" alt="Industrial" class="pm-img"/>
+        <div class="pm-img-ov"></div>
+        <div class="pm-tag">CCTV · Industrial</div>
+      </div>
+      <div class="pm-img-wrap">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&q=80" alt="Retail" class="pm-img"/>
+        <div class="pm-img-ov"></div>
+        <div class="pm-tag">Network · Retail</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════ FILTER + PROJECTS GRID ════════════════════════ -->
+<section class="pj-section pj-gallery-section">
+  <div class="pj-container">
+    <div class="pj-header" data-aos="fade-up">
+      <span class="pj-tag">All Projects</span>
+      <h2 class="pj-title">Browse Our <em>Completed Projects</em></h2>
+      <p class="pj-desc">Filter by category or location to find projects similar to your requirements.</p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="pj-filter-bar" data-aos="fade-up">
+      <div class="pj-filters">
+        <button class="pjf-btn active" data-filter="all">All Projects</button>
+        <button class="pjf-btn" data-filter="cctv">CCTV</button>
+        <button class="pjf-btn" data-filter="network">Networking</button>
+        <button class="pjf-btn" data-filter="residential">Residential</button>
+        <button class="pjf-btn" data-filter="commercial">Commercial</button>
+        <button class="pjf-btn" data-filter="industrial">Industrial</button>
+      </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid" id="projectsGrid" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- P1 — Featured Large -->
+      <div class="pj-card pj-card-large" data-cat="cctv industrial">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=85" alt="Warehouse CCTV" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-featured-tag">⭐ Featured Project</div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">CCTV · Industrial</span>
+              <span class="pjci-loc">📍 Mumbai, Maharashtra</span>
+            </div>
+            <h3 class="pjci-title">Large Warehouse — 32 Camera System</h3>
+            <p class="pjci-desc">Complete 32-camera HD CCTV installation across a 50,000 sq.ft warehouse. PTZ cameras at entry gates, dome cameras inside, full DVR room setup, and remote monitoring configured.</p>
+            <div class="pjci-specs">
+              <span>32 Cameras</span>
+              <span>HD 1080p</span>
+              <span>PTZ + Dome</span>
+              <span>Remote View</span>
+              <span>DVR Room</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P2 -->
+      <div class="pj-card" data-cat="network commercial">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80" alt="Office Network" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">Networking · Commercial</span>
+              <span class="pjci-loc">📍 Delhi, NCR</span>
+            </div>
+            <h3 class="pjci-title">Corporate Office — 3-Floor LAN Setup</h3>
+            <p class="pjci-desc">Structured Cat6 LAN cabling across 3 floors, 6 gigabit switches, server room setup, and WiFi coverage for 150+ users.</p>
+            <div class="pjci-specs">
+              <span>3 Floors</span>
+              <span>Cat6 LAN</span>
+              <span>150+ Users</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P3 -->
+      <div class="pj-card" data-cat="cctv commercial">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80" alt="Showroom CCTV" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">CCTV · Commercial</span>
+              <span class="pjci-loc">📍 Bangalore, Karnataka</span>
+            </div>
+            <h3 class="pjci-title">Auto Showroom — 16 Camera HD Setup</h3>
+            <p class="pjci-desc">16 HD cameras installed at a premium auto showroom — indoor dome, outdoor bullet, and IP cameras with night vision.</p>
+            <div class="pjci-specs">
+              <span>16 Cameras</span>
+              <span>Night Vision</span>
+              <span>IP Cameras</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P4 -->
+      <div class="pj-card" data-cat="cctv residential">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="Residential CCTV" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">CCTV · Residential</span>
+              <span class="pjci-loc">📍 Pune, Maharashtra</span>
+            </div>
+            <h3 class="pjci-title">Residential Villa — 8 Camera System</h3>
+            <p class="pjci-desc">Complete home security with 8 cameras covering entry gates, garden, basement, and interiors with mobile app access.</p>
+            <div class="pjci-specs">
+              <span>8 Cameras</span>
+              <span>Mobile View</span>
+              <span>Motion Alerts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P5 — Featured Medium -->
+      <div class="pj-card pj-card-wide" data-cat="network industrial">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=900&q=85" alt="Factory Network" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">Networking · Industrial</span>
+              <span class="pjci-loc">📍 Hyderabad, Telangana</span>
+            </div>
+            <h3 class="pjci-title">Manufacturing Plant — Enterprise Network + CCTV Integration</h3>
+            <p class="pjci-desc">Complete LAN/WAN setup for a 3-building manufacturing plant integrating with IP CCTV network. 48 cameras + structured cabling across 80,000 sq.ft, centralized monitoring room.</p>
+            <div class="pjci-specs">
+              <span>48 Cameras</span>
+              <span>LAN + WAN</span>
+              <span>Fiber Backbone</span>
+              <span>Control Room</span>
+              <span>80,000 sq.ft</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P6 -->
+      <div class="pj-card" data-cat="cctv commercial">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Office CCTV" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">CCTV · Commercial</span>
+              <span class="pjci-loc">📍 Chennai, Tamil Nadu</span>
+            </div>
+            <h3 class="pjci-title">IT Office Complex — IP Camera System</h3>
+            <p class="pjci-desc">24 IP cameras for a multi-floor IT office with server room security, entry management, and cloud storage backup.</p>
+            <div class="pjci-specs">
+              <span>24 IP Cameras</span>
+              <span>Cloud Backup</span>
+              <span>NVR Setup</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P7 -->
+      <div class="pj-card" data-cat="network residential">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=600&q=80" alt="Home Network" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">Networking · Residential</span>
+              <span class="pjci-loc">📍 Ahmedabad, Gujarat</span>
+            </div>
+            <h3 class="pjci-title">Luxury Apartment — Whole-Home WiFi</h3>
+            <p class="pjci-desc">Mesh WiFi setup across a 4BHK duplex apartment — zero dead zones, smart device integration, parental controls.</p>
+            <div class="pjci-specs">
+              <span>Mesh WiFi</span>
+              <span>4BHK</span>
+              <span>Smart Home</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P8 -->
+      <div class="pj-card" data-cat="cctv industrial">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1553484771-047a44eee27a?w=600&q=80" alt="Cold Storage" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">CCTV · Industrial</span>
+              <span class="pjci-loc">📍 Surat, Gujarat</span>
+            </div>
+            <h3 class="pjci-title">Cold Storage Facility — 20 Camera System</h3>
+            <p class="pjci-desc">20 weatherproof cameras for a large cold storage facility including freezer zones — with temperature-resistant housings.</p>
+            <div class="pjci-specs">
+              <span>20 Cameras</span>
+              <span>Weatherproof</span>
+              <span>Low-Temp Rated</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P9 — Wide -->
+      <div class="pj-card pj-card-wide" data-cat="network commercial">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1551808525-51a94da548ce?w=900&q=85" alt="Hospital Network" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">Network + CCTV · Commercial</span>
+              <span class="pjci-loc">📍 Kolkata, West Bengal</span>
+            </div>
+            <h3 class="pjci-title">Medical Centre — Integrated Security & Network</h3>
+            <p class="pjci-desc">Complete IT and security infrastructure for a multi-specialty clinic — 30 cameras, structured LAN, WiFi for patients and staff, nurse station monitoring, and remote doctor access setup.</p>
+            <div class="pjci-specs">
+              <span>30 Cameras</span>
+              <span>Patient WiFi</span>
+              <span>Structured LAN</span>
+              <span>Remote Access</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P10 -->
+      <div class="pj-card" data-cat="cctv residential">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80" alt="Society CCTV" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">CCTV · Residential</span>
+              <span class="pjci-loc">📍 Jaipur, Rajasthan</span>
+            </div>
+            <h3 class="pjci-title">Gated Society — 40 Camera Coverage</h3>
+            <p class="pjci-desc">40-camera system for a gated residential society — entry/exit PTZ, staircase domes, parking area bullets.</p>
+            <div class="pjci-specs">
+              <span>40 Cameras</span>
+              <span>PTZ Gates</span>
+              <span>ANPR Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P11 -->
+      <div class="pj-card" data-cat="network commercial">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&q=80" alt="School Network" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">Network + CCTV · Education</span>
+              <span class="pjci-loc">📍 Lucknow, UP</span>
+            </div>
+            <h3 class="pjci-title">Private School — Campus-Wide Surveillance</h3>
+            <p class="pjci-desc">28 cameras across classrooms, corridors, and gates with school WiFi network setup for 500+ students and staff.</p>
+            <div class="pjci-specs">
+              <span>28 Cameras</span>
+              <span>Campus WiFi</span>
+              <span>500+ Users</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P12 -->
+      <div class="pj-card" data-cat="cctv commercial">
+        <div class="pjc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1520218578322-0d5e350c9516?w=600&q=80" alt="Restaurant CCTV" class="pjc-img"/>
+          <div class="pjc-overlay"></div>
+          <div class="pjc-info">
+            <div class="pjci-top">
+              <span class="pjci-cat">CCTV · Commercial</span>
+              <span class="pjci-loc">📍 Indore, MP</span>
+            </div>
+            <h3 class="pjci-title">Restaurant Chain — Multi-Branch CCTV</h3>
+            <p class="pjci-desc">Centralized CCTV setup across 4 restaurant branches — all viewable from one single app by the owner.</p>
+            <div class="pjci-specs">
+              <span>4 Branches</span>
+              <span>Central View</span>
+              <span>12 Cameras</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Load more hint -->
+    <div class="pj-load-more" data-aos="fade-up">
+      <p>These are a sample of our projects. We have completed <strong>500+ projects</strong> across India.</p>
+      <a href="contact.html" class="btn-pj-primary">Discuss Your Project</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════ PROJECT TYPES STRIP ════════════════════════ -->
+<section class="pj-section pj-types-section">
+  <div class="pjt-bg"></div>
+  <div class="pj-container">
+    <div class="pj-header" data-aos="fade-up">
+      <span class="pj-tag pj-tag-white">Where We Work</span>
+      <h2 class="pj-title pj-title-white">Projects Across <em>Every Sector</em></h2>
+    </div>
+
+    <div class="pjt-cards" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="pjt-card">
+        <div class="pjt-img-wrap">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="Residential" class="pjt-img"/>
+          <div class="pjt-overlay"></div>
+        </div>
+        <div class="pjt-content">
+          <div class="pjt-emoji">🏠</div>
+          <h3>Residential</h3>
+          <p>Homes, Villas & Apartments</p>
+          <div class="pjt-count">150+ Projects</div>
+        </div>
+      </div>
+
+      <div class="pjt-card">
+        <div class="pjt-img-wrap">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80" alt="Commercial" class="pjt-img"/>
+          <div class="pjt-overlay"></div>
+        </div>
+        <div class="pjt-content">
+          <div class="pjt-emoji">🏪</div>
+          <h3>Commercial</h3>
+          <p>Shops, Showrooms & Retail</p>
+          <div class="pjt-count">180+ Projects</div>
+        </div>
+      </div>
+
+      <div class="pjt-card">
+        <div class="pjt-img-wrap">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Corporate" class="pjt-img"/>
+          <div class="pjt-overlay"></div>
+        </div>
+        <div class="pjt-content">
+          <div class="pjt-emoji">🏢</div>
+          <h3>Corporate</h3>
+          <p>Offices & IT Companies</p>
+          <div class="pjt-count">100+ Projects</div>
+        </div>
+      </div>
+
+      <div class="pjt-card">
+        <div class="pjt-img-wrap">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80" alt="Industrial" class="pjt-img"/>
+          <div class="pjt-overlay"></div>
+        </div>
+        <div class="pjt-content">
+          <div class="pjt-emoji">🏭</div>
+          <h3>Industrial</h3>
+          <p>Warehouses & Factories</p>
+          <div class="pjt-count">70+ Projects</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════ PROCESS STRIP ════════════════════════ -->
+<section class="pj-section pj-process-section">
+  <div class="pj-container">
+    <div class="pj-header" data-aos="fade-up">
+      <span class="pj-tag">Our Approach</span>
+      <h2 class="pj-title">How Every Project <em>Gets Done Right</em></h2>
+      <p class="pj-desc">A proven process built over 500+ projects — designed to deliver on time, on budget, every time.</p>
+    </div>
+
+    <div class="pjp-steps" data-aos="fade-up" data-aos-delay="100">
+      <div class="pjp-step">
+        <div class="pjp-num">01</div>
+        <div class="pjp-icon">📞</div>
+        <h3>Inquiry</h3>
+        <p>Call or WhatsApp. Describe your project — we respond in 15 minutes.</p>
+      </div>
+      <div class="pjp-arrow">→</div>
+      <div class="pjp-step">
+        <div class="pjp-num">02</div>
+        <div class="pjp-icon">📐</div>
+        <h3>Site Survey</h3>
+        <p>Free visit to your location. We plan, measure, and quote precisely.</p>
+      </div>
+      <div class="pjp-arrow">→</div>
+      <div class="pjp-step">
+        <div class="pjp-num">03</div>
+        <div class="pjp-icon">🔧</div>
+        <h3>Installation</h3>
+        <p>Clean, professional installation by our certified team — on schedule.</p>
+      </div>
+      <div class="pjp-arrow">→</div>
+      <div class="pjp-step">
+        <div class="pjp-num">04</div>
+        <div class="pjp-icon">✅</div>
+        <h3>Handover</h3>
+        <p>Testing, training, and 24×7 ongoing support. Project complete.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════ CTA ════════════════════════ -->
+<section class="pj-cta-section">
+  <div class="pj-cta-bg"></div>
+  <div class="pj-container">
+    <div class="pj-cta-inner" data-aos="zoom-in">
+      <div class="pj-cta-icon">🚀</div>
+      <h2 class="pj-cta-title">Your Project Could Be <em>Next</em></h2>
+      <p class="pj-cta-desc">Join 200+ satisfied clients across India. Get a free site survey and customized quote for your security or networking project.</p>
+      <div class="pj-cta-actions">
+        <a href="tel:7892225484" class="btn-cta-solid">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+          Call: 7892225484
+        </a>
+        <a href="https://wa.me/917892225484" target="_blank" class="btn-cta-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+        <a href="contact.html" class="btn-cta-outline">Free Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════ FOOTER ════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <div class="footer-logo-icon"><svg width="30" height="30" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="#0057FF" stroke-width="2"/><circle cx="18" cy="18" r="8" fill="#0057FF" opacity="0.2"/><circle cx="18" cy="18" r="4" fill="#0057FF"/><line x1="18" y1="1" x2="18" y2="8" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="18" y1="28" x2="18" y2="35" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="18" x2="8" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/><line x1="28" y1="18" x2="35" y2="18" stroke="#0057FF" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div class="footer-logo-text"><span class="flm">Netviz</span><span class="fls">Solutions</span></div>
+        </a>
+        <p class="footer-tagline">Smart Security. Reliable Networking.<br/>Trusted Solutions.</p>
+        <div class="footer-contact-info">
+          <a href="tel:7892225484" class="fci-item"><span>📞</span><span>7892225484</span></a>
+          <a href="mailto:netvizsolutions@gmail.com" class="fci-item"><span>✉️</span><span>netvizsolutions@gmail.com</span></a>
+          <div class="fci-item"><span>📍</span><span>All Over India</span></div>
+        </div>
+        <a href="https://wa.me/917892225484" target="_blank" class="whatsapp-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="footer-col"><h4 class="footer-col-title">Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="service-area.html">Service Area</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-col-title">Our Services</h4><ul class="footer-links"><li><a href="services/cctv-installation.html">CCTV Installation</a></li><li><a href="services/surveillance-systems.html">Surveillance Systems</a></li><li><a href="services/networking-solutions.html">Networking Solutions</a></li><li><a href="services/router-setup.html">Router & Network Setup</a></li><li><a href="services/maintenance.html">Maintenance & AMC</a></li><li><a href="services/remote-monitoring.html">Remote Monitoring</a></li><li><a href="services/troubleshooting.html">Troubleshooting</a></li></ul></div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Service Coverage</h4>
+        <div class="footer-coverage"><div class="coverage-badge">🇮🇳 Pan India Service</div><p class="coverage-text">Projects completed across all major cities and states in India.</p><a href="service-area.html" class="coverage-link">View Full Service Area →</a></div>
+        <div class="footer-cta-box"><p>Start your project today</p><a href="contact.html" class="footer-cta-btn">Get Free Quote</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-container footer-bottom-inner">
+      <p class="footer-copy">© 2025 Netviz Solutions. All Rights Reserved.</p>
+      <p class="footer-credit">Designed &amp; Developed by <a href="https://nexaaweb.github.io/" target="_blank" rel="noopener" class="nexaa-link">@nexaaaweb</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/917892225484" target="_blank" class="float-whatsapp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="float-pulse"></span>
+</a>
+
+<script>
+  /* Header */
+  const hdr = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 20));
+  document.getElementById('hamburger').addEventListener('click', function(){
+    this.classList.toggle('open'); document.getElementById('navMobile').classList.toggle('open');
+  });
+  const msb = document.getElementById('mobServBtn');
+  const msm = document.getElementById('mobSubMenu');
+  if(msb && msm){ msb.addEventListener('click', function(){ this.classList.toggle('open'); msm.classList.toggle('open'); }); }
+
+  /* AOS */
+  document.querySelectorAll('[data-aos]').forEach(el => {
+    new IntersectionObserver((e) => { e.forEach(x => { if(x.isIntersecting) x.target.classList.add('aos-animate'); }); }, { threshold: 0.08 }).observe(el);
+  });
+
+  /* Counters */
+  document.querySelectorAll('[data-count]').forEach(el => {
+    new IntersectionObserver((e) => {
+      e.forEach(x => {
+        if(x.isIntersecting){
+          const t = +x.target.dataset.count; let c = 0;
+          const step = Math.ceil(t/60);
+          const timer = setInterval(() => { c = Math.min(c+step,t); x.target.textContent=c; if(c>=t) clearInterval(timer); }, 25);
+        }
+      });
+    }, { threshold: 0.5 }).observe(el);
+  });
+
+  /* Filter */
+  const filterBtns = document.querySelectorAll('.pjf-btn');
+  const cards = document.querySelectorAll('.pj-card');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function(){
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const filter = this.dataset.filter;
+      cards.forEach(card => {
+        const cats = card.dataset.cat || '';
+        if(filter === 'all' || cats.includes(filter)){
+          card.style.opacity = '0';
+          card.style.display = '';
+          setTimeout(() => { card.style.transition = 'opacity .4s ease'; card.style.opacity = '1'; }, 10);
+        } else {
+          card.style.opacity = '0';
+          setTimeout(() => card.style.display = 'none', 400);
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
